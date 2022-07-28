@@ -1,7 +1,7 @@
 package dev.ithundxr.mods.farwateraddons;
 
+import dev.ithundxr.mods.farwateraddons.blocks.ModBlocks;
 import dev.ithundxr.mods.farwateraddons.items.ModItems;
-import dev.ithundxr.mods.farwateraddons.utils.ModItemProperties;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -24,21 +24,16 @@ public class FarwaterAddons {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
 
         eventBus.addListener(this::setup);
-        eventBus.addListener(this::clientSetup);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    private void clientSetup(final FMLClientSetupEvent event) {
-        ModItemProperties.addCustomItemProperties();
-    }
-
     private void setup(final FMLCommonSetupEvent event) {
         // some preinit code
         LOGGER.info("HELLO FROM PREINIT");
-        LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
     }
 }

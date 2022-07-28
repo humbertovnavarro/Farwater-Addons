@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "farwateraddons:block/cotton_stage0"
+  }
+}

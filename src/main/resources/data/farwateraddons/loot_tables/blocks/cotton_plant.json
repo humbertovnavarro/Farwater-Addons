@@ -15,11 +15,11 @@
                   "condition": "minecraft:block_state_property",
                   "block": "farwateraddons:cotton_plant",
                   "properties": {
-                    "age": "3"
+                    "age": "7"
                   }
                 }
               ],
-              "name": "farwateraddons:cottoncandy"
+              "name": "farwateraddons:cotton"
             },
             {
               "type": "minecraft:item",
@@ -54,7 +54,7 @@
           "condition": "minecraft:block_state_property",
           "block": "farwateraddons:cotton_plant",
           "properties": {
-            "age": "3"
+            "age": "7"
           }
         }
       ]

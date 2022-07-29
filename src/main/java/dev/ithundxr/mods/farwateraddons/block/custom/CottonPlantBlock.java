@@ -12,7 +12,7 @@ public class CottonPlantBlock extends CropBlock {
 
     @Override
     public int getMaxAge() {
-        return 3;
+        return 7;
     }
 
     @Override

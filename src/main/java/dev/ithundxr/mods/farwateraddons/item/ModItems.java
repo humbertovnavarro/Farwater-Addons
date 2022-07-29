@@ -19,6 +19,9 @@ public class ModItems {
     public static final RegistryObject<Item> COTTONCANDY = ITEMS.register("cottoncandy",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.FARWATERADDONS_TAB).food(ModFoods.COTTONCANDY)));
 
+    public static final RegistryObject<Item> COTTON = ITEMS.register("cotton",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.FARWATERADDONS_TAB).food(ModFoods.COTTONCANDY)));
+
     public static final RegistryObject<Item> COTTON_SEEDS = ITEMS.register("cotton_seeds",
             () -> new ItemNameBlockItem(ModBlocks.COTTON_PLANT.get(),
                     new Item.Properties().tab(ModCreativeModeTab.FARWATERADDONS_TAB)));

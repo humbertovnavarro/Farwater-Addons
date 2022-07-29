@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients":
+  [
+    {
+      "item": "farwateraddons:cotton"
+    }
+  ],
+  "result": {
+    "item": "farwateraddons:cotton_seeds"
+  }
+}

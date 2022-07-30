@@ -1,0 +1,10 @@
+{
+  "the_lost_soul": {
+    "sounds": [
+      {
+        "name": "farwateraddons:the_lost_soul",
+        "stream": true
+      }
+    ]
+  }
+}

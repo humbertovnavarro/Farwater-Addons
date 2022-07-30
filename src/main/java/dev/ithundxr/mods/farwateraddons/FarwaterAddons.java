@@ -1,6 +1,7 @@
 package dev.ithundxr.mods.farwateraddons;
 
 import dev.ithundxr.mods.farwateraddons.block.ModBlocks;
+import dev.ithundxr.mods.farwateraddons.fluid.ModFluids;
 import dev.ithundxr.mods.farwateraddons.item.ModItems;
 import dev.ithundxr.mods.farwateraddons.painting.ModPaintings;
 import dev.ithundxr.mods.farwateraddons.sound.ModSounds;
@@ -32,6 +33,8 @@ public class FarwaterAddons {
 
         ModPaintings.register(eventBus);
         ModSounds.register(eventBus);
+
+        ModFluids.register(eventBus);
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);

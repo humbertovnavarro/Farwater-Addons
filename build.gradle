@@ -46,6 +46,9 @@ minecraft {
         client {
             workingDirectory project.file('run')
 
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+
             // Recommended logging data for a userdev environment
             // The markers can be added/remove as needed separated by commas.
             // "SCAN": For mods scan.
@@ -159,17 +162,9 @@ repositories {
     // flatDir {
     //     dir 'libs'
     // }
-    /*maven {
-        // Location of the maven for mixed mappings, Registrate, and Flywheel
-        name 'tterrag maven'
-        url 'https://maven.tterrag.com'
-    }
     maven {
-        url 'https://www.cursemaven.com'
-        content {
-            includeGroup "curse.maven"
-        }
-    }*/
+        url "https://maven.tterrag.com/"
+    }
     maven {
         // location of the maven that hosts JEI files
         name = "Progwml6 maven"
@@ -183,11 +178,12 @@ dependencies {
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft 'net.minecraftforge:forge:1.18.2-40.1.0'
 
-    //implementation fg.deobf("curse.maven:create-328085:3872145")
+    implementation fg.deobf("com.simibubi.create:Create:mc${create_version}")
+    implementation fg.deobf("com.jozufozu.flywheel:Flywheel-Forge:${flywheel_version}")
 
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency
-    // runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}") // Adds the full JEI mod as a runtime dependency
+     runtimeOnly fg.deobf("mezz.jei:jei-1.18.2:9.7.1.232") // Adds the full JEI mod as a runtime dependency
     // implementation fg.deobf("com.tterrag.registrate:Registrate:MC${mc_version}-${registrate_version}") // Adds registrate as a dependency
 
     // Examples using mod jars from ./libs

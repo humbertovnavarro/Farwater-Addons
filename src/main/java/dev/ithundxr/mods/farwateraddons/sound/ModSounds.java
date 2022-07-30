@@ -13,10 +13,7 @@ public class ModSounds {
     public static final DeferredRegister<SoundEvent> SOUND_EVENTS =
             DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, FarwaterAddons.MOD_ID);
 
-    public static final RegistryObject<SoundEvent> DOWSING_ROD_FOUND_ORE =
-            registerSoundEvent("dowsing_rod_found_ore");
-
-    //start register code here
+    public static RegistryObject<SoundEvent> THE_LOST_SOUL = registerSoundEvent("the_lost_soul");
 
 
     //start ForgeSoundType here

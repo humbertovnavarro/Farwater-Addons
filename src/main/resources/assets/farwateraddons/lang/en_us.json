@@ -5,5 +5,11 @@
   "item.farwateraddons.cotton": "Cotton",
   "item.farwateraddons.cotton_seeds": "Cotton Seeds",
 
+  "item.farwateraddons.molten_sugar_bucket": "Molten Sugar Bucket",
+  "fluid.farwateraddons.molten_sugar": "Molten Sugar",
+
+  "item.farwateraddons.the_lost_soul_music_disc": "Music Disc",
+  "item.farwateraddons.the_lost_soul_music_disc.desc": "RedWolf - The Lost Soul",
+
   "itemGroup.farwateraddonstab": "Farwater Addons"
 }

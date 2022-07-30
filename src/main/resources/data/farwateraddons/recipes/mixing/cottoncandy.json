@@ -1,0 +1,29 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "farwateraddons:cotton"
+    },
+    {
+      "item": "minecraft:pink_dye"
+    },
+    {
+      "fluid": "farwateraddons:molten_sugar",
+      "amount": 250
+    },
+    {
+      "fluid": "minecraft:water",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "item": "farwateraddons:cottoncandy",
+      "amount": 3
+    }
+  ],
+  "heatRequirement": "heated"
+}

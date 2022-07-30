@@ -2,6 +2,9 @@ package dev.ithundxr.mods.farwateraddons;
 
 import dev.ithundxr.mods.farwateraddons.block.ModBlocks;
 import dev.ithundxr.mods.farwateraddons.item.ModItems;
+import dev.ithundxr.mods.farwateraddons.painting.ModPaintings;
+import dev.ithundxr.mods.farwateraddons.sound.ModSounds;
+import dev.ithundxr.mods.farwateraddons.util.ModItemProperties;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.common.MinecraftForge;
@@ -27,6 +30,9 @@ public class FarwaterAddons {
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
 
+        ModPaintings.register(eventBus);
+        ModSounds.register(eventBus);
+
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);
 
@@ -37,8 +43,11 @@ public class FarwaterAddons {
     private void clientSetup(final FMLClientSetupEvent event) {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.COTTON_PLANT.get(), RenderType.cutout());
 
+        ModItemProperties.addCustomItemProperties();
     }
 
     private void setup(final FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+        });
     }
 }

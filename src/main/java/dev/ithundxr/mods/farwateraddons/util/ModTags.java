@@ -1,4 +1,4 @@
-package dev.ithundxr.mods.farwateraddons.utils;
+package dev.ithundxr.mods.farwateraddons.util;
 
 import dev.ithundxr.mods.farwateraddons.FarwaterAddons;
 import net.minecraft.resources.ResourceLocation;

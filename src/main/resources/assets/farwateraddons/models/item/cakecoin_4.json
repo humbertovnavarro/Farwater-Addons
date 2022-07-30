@@ -1,0 +1,6 @@
+{
+  "parent": "farwateraddons:item/cakecoin",
+  "textures": {
+    "layer0": "farwateraddons:item/cakecoin_4"
+  }
+}

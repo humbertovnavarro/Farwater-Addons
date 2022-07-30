@@ -16,7 +16,7 @@ apply plugin: 'org.parchmentmc.librarian.forgegradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '0.0.1-1.18.1'
+version = '0.0.1-1.18.2'
 group = 'dev.ithundxr.mods.farwateraddons' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'farwateraddons'
 
@@ -159,7 +159,7 @@ repositories {
     // flatDir {
     //     dir 'libs'
     // }
-    maven {
+    /*maven {
         // Location of the maven for mixed mappings, Registrate, and Flywheel
         name 'tterrag maven'
         url 'https://maven.tterrag.com'
@@ -169,7 +169,7 @@ repositories {
         content {
             includeGroup "curse.maven"
         }
-    }
+    }*/
     maven {
         // location of the maven that hosts JEI files
         name = "Progwml6 maven"
@@ -183,7 +183,7 @@ dependencies {
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft 'net.minecraftforge:forge:1.18.2-40.1.0'
 
-    implementation fg.deobf("curse.maven:create-328085:3872145")
+    //implementation fg.deobf("curse.maven:create-328085:3872145")
 
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency

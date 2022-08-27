@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "item": "farwateraddons:cottoncandy"
+    },
+    "title": "Yummy",
+    "description": "Make yourself some Cotton Candy!"
+  },
+  "parent": "farwateraddons:root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "farwateraddons:cottoncandy"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

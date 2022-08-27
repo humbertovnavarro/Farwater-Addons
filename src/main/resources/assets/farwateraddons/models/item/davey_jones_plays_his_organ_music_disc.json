@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "farwateraddons:item/davey_jones_plays_his_organ_music_disc"
+  }
+}

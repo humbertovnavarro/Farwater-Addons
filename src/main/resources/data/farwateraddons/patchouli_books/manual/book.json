@@ -1,0 +1,8 @@
+{
+  "name": "Farwater Addons",
+  "landing_text": "This manual provides information about all the things added by this custom mod.$(p)Please visit the developers website $(9)$(l:https://ithundxr.dev/)here$(/l)$().",
+  "book_texture": "patchouli:textures/gui/book_red.png",
+  "model": "patchouli:book_cyan",
+  "creative_tab": "farwateraddonstab",
+  "version": 1
+}

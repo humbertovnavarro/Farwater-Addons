@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "farwateraddons:ithundxr_item"
+    },
+    "title": "Farwater Addons",
+    "description": "Here be sweetness and goodness!\n\nThis is a advancement line for FarwaterAddons mod that was made by IThundxr",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "create:textures/block/palettes/stone_types/brick/limestone_cut_brick.png"
+  },
+  "criteria": {
+    "0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {}
+    }
+  },
+  "requirements": [
+    [
+      "0"
+    ]
+  ]
+}

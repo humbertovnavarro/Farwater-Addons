@@ -2,6 +2,7 @@ package dev.ithundxr.mods.farwateraddons.block;
 
 import dev.ithundxr.mods.farwateraddons.FarwaterAddons;
 import dev.ithundxr.mods.farwateraddons.block.custom.CottonPlantBlock;
+import dev.ithundxr.mods.farwateraddons.item.ModCreativeModeTab;
 import dev.ithundxr.mods.farwateraddons.item.ModItems;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
@@ -22,12 +23,11 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, FarwaterAddons.MOD_ID);
 
-    /*public static final RegistryObject<Block> COTTON_CANDY_PLANK = registerBlock("cotton_candy_plank",
-            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(9f).requiresCorrectToolForDrops()), ModCreativeModeTab.FARWATERADDONS_TAB);*/
-
     public static final RegistryObject<Block> COTTON_PLANT = registerBlockWithoutBlockItem("cotton_plant",
             () -> new CottonPlantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
+
+    public static final RegistryObject<Block> AMETHYST_GLASS = registerBlock("amethyst_glass",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion()), ModCreativeModeTab.FARWATERADDONS_TAB);
 
 
 

@@ -1,0 +1,10 @@
+{
+  "loader": "mantle:connected",
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "farwateraddons:block/clear_amethyst_glass"
+  },
+  "connection": {
+    "textures": {"all": "cornerless_full"}
+  }
+}

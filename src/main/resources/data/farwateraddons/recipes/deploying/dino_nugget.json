@@ -1,0 +1,17 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "farwateraddons:chicken_nugget"
+    },
+    {
+      "item": "farwateraddons:dino_nugget_cutter"
+    }
+  ],
+  "results": [
+    {
+      "item": "farwateraddons:dino_nugget"
+    }
+  ],
+  "keepHeldItem": true
+}

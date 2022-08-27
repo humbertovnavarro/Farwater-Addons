@@ -1,9 +1,55 @@
 {
   "the_lost_soul": {
+    "subtitle": "subtitle.farwateraddons.the_lost_soul",
     "sounds": [
       {
-        "name": "farwateraddons:the_lost_soul",
+        "name": "farwateraddons:disc/the_lost_soul",
         "stream": true
+      }
+    ]
+  },
+  "davey_jones_plays_his_organ": {
+    "subtitle": "subtitle.farwateraddons.davey_jones_plays_his_organ",
+    "sounds": [
+      {
+        "name": "farwateraddons:disc/davey_jones_plays_his_organ",
+        "stream": true
+      }
+    ]
+  },
+  "pstp": {
+    "subtitle": "subtitle.farwateraddons.pstp",
+    "sounds": [
+      {
+        "name": "farwateraddons:disc/pstp",
+        "stream": true
+      }
+    ]
+  },
+  "capybara.ambient": {
+    "subtitle": "subtitle.farwateraddons.capybara.ambient",
+    "sounds": [
+      {
+        "name": "farwateraddons:capybara/ambient_1"
+      },
+      {
+        "name": "farwateraddons:capybara/ambient_2"
+      }
+    ]
+  },
+  "capybara.death": {
+    "subtitle": "subtitle.farwateraddons.capybara.death",
+    "sounds": [
+      {
+        "name": "farwateraddons:capybara/death"
+      }
+    ]
+  },
+  "capybara.hurt": {
+    "subtitle": "subtitle.farwateraddons.capybara.hurt",
+    "sounds": [
+      {
+        "name": "farwateraddons:capybara/hurt"
       }
     ]
   }

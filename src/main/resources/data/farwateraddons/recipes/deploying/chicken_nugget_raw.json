@@ -1,0 +1,17 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "minecraft:chicken"
+    },
+    {
+      "item": "farwateraddons:nugget_cutter"
+    }
+  ],
+  "results": [
+    {
+      "item": "farwateraddons:chicken_nugget_raw"
+    }
+  ],
+  "keepHeldItem": true
+}

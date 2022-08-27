@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients":
+  [
+    {
+      "item": "etched:blank_music_disc"
+    }
+  ],
+  "result": {
+    "item": "farwateraddons:blank_music_disc"
+  }
+}

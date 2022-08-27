@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "ingredient": {
+    "item": "farwateraddons:dino_nugget_raw"
+  },
+  "result": "farwateraddons:dino_nugget",
+  "experience": 0.15,
+  "cookingtime": 600
+}

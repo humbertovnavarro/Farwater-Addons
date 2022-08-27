@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "b#b",
+    "#p#",
+    "b#b"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:gold_block"
+    },
+    "p": {
+      "item": "minecraft:music_disc_pigstep"
+    },
+    "b": {
+      "item": "minecraft:light_blue_dye"
+    }
+  },
+  "result": {
+    "item": "farwateraddons:pstp_music_disc",
+    "count": 1
+  }
+}

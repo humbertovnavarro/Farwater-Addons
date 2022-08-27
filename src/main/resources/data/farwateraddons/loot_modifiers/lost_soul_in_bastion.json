@@ -1,0 +1,10 @@
+{
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/bastion_other"
+    }
+  ],
+  "addition": "farwateraddons:disc_fragment_lost_soul",
+  "type": "farwateraddons:lost_soul_in_bastion"
+}

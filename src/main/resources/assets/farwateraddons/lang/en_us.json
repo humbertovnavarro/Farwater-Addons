@@ -1,15 +1,46 @@
 {
   "item.farwateraddons.cakecoin": "Cake Coin",
 
+  "block.farwateraddons.amethyst_glass": "Amethyst Glass",
+
   "item.farwateraddons.cottoncandy": "Cotton Candy",
   "item.farwateraddons.cotton": "Cotton",
   "item.farwateraddons.cotton_seeds": "Cotton Seeds",
 
+  "item.farwateraddons.chicken_nugget": "Cooked Chicken Nugget",
+  "item.farwateraddons.chicken_nugget_raw": "Raw Chicken Nugget",
+  "item.farwateraddons.dino_nugget": "Cooked Dino Nugget",
+  "item.farwateraddons.dino_nugget_raw": "Raw Dino Nugget",
+  "item.farwateraddons.dino_nugget_cutter": "Dino Cutter",
+  "item.farwateraddons.nugget_cutter": "Nugget Cutter",
+
   "item.farwateraddons.molten_sugar_bucket": "Molten Sugar Bucket",
   "fluid.farwateraddons.molten_sugar": "Molten Sugar",
 
+  "item.farwateraddons.blank_music_disc": "Blank Music Disc",
+
+  "item.farwateraddons.disc_fragment_lost_soul": "The Lost Soul Disc Fragment",
   "item.farwateraddons.the_lost_soul_music_disc": "Music Disc",
   "item.farwateraddons.the_lost_soul_music_disc.desc": "RedWolf - The Lost Soul",
+  "subtitle.farwateraddons.the_lost_soul": "RedWolf - The Lost Soul Music Disc Plays",
+
+  "item.farwateraddons.davey_jones_plays_his_organ_music_disc": "Music Disc",
+  "item.farwateraddons.davey_jones_plays_his_organ_music_disc.desc": "TyrDrop - The Davey Jones Plays His Organ",
+  "subtitle.farwateraddons.davey_jones_plays_his_organ": "TyrDrop - The Davey Jones Plays His Organ",
+
+  "item.farwateraddons.pstp_music_disc": "Music Disc",
+  "item.farwateraddons.pstp_music_disc.desc": "TyrDrop - Pigstep Remix",
+  "subtitle.farwateraddons.pstp": "TyrDrop - Pigstep Remix Music Disc Plays",
+
+  "item.farwateraddons.capybara_spawn_egg": "Capybara Spawn Egg",
+  "entity.farwateraddons.capybara": "Capybara",
+  "subtitle.farwateraddons.capybara.ambient": "Capybara whines",
+  "subtitle.farwateraddons.capybara.hurt": "Capybara hurts",
+  "subtitle.farwateraddons.capybara.death": "Capybara dies",
+
+  "item.farwateraddons.recall_amulet": "Recall Amulet",
+  "chat.farwateraddons.recall.dimension": "Can't teleport across dimensions",
+  "chat.farwateraddons.recall.nobed": "Couldn't find bed",
 
   "itemGroup.farwateraddonstab": "Farwater Addons"
 }

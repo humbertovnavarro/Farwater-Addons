@@ -6,6 +6,7 @@ import dev.ithundxr.mods.farwateraddons.entity.ModEntityTypes;
 import dev.ithundxr.mods.farwateraddons.fluid.ModFluids;
 import dev.ithundxr.mods.farwateraddons.item.custom.RecallAmulet;
 import dev.ithundxr.mods.farwateraddons.sound.ModSounds;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;

@@ -31,7 +31,6 @@ public class FarwaterAddons {
     public FarwaterAddons() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        ModItems.register(eventBus);
         ModBlocks.register(eventBus);
 
         ModPaintings.register(eventBus);

@@ -5,6 +5,7 @@ import dev.ithundxr.mods.farwateraddons.entity.ModEntityTypes;
 import dev.ithundxr.mods.farwateraddons.entity.client.capybara.CapybaraAnimalAttractionGoal;
 import dev.ithundxr.mods.farwateraddons.item.ModItems;
 import dev.ithundxr.mods.farwateraddons.sound.ModSounds;
+import net.minecraft.core.Direction;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
@@ -18,6 +19,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.vehicle.DismountHelper;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.pathfinder.BlockPathTypes;
@@ -37,6 +39,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.entity.ai.navigation.*;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.core.BlockPos;
+import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -263,7 +266,7 @@ public class CapybaraEntity extends TamableAnimal implements ItemSteerable, IAni
         if (!(entity instanceof Player player)) {
             return false;
         } else {
-            return player.getMainHandItem().is(Items.CARROT_ON_A_STICK) || player.getOffhandItem().is(Items.CARROT_ON_A_STICK);
+            return player.getMainHandItem().is(ModItems.ORANGE_ON_A_STICK.get()) || player.getOffhandItem().is(ModItems.ORANGE_ON_A_STICK.get());
         }
     }
 
@@ -313,23 +316,20 @@ public class CapybaraEntity extends TamableAnimal implements ItemSteerable, IAni
     }
 
     @Override
-    public void travel(@NotNull Vec3 pTravelVector) {
+    public void travel(Vec3 pTravelVector) {
         this.travel(this, this.steering, pTravelVector);
     }
 
-    @Override
     public float getSteeringSpeed() {
         return (float)this.getAttributeValue(Attributes.MOVEMENT_SPEED) * 0.225F;
     }
 
-    @Override
-    public boolean boost() {
-        return this.steering.boost(this.getRandom());
+    public void travelWithInput(Vec3 pTravelVec) {
+        super.travel(pTravelVec);
     }
 
-    @Override
-    public void travelWithInput(@NotNull Vec3 pTravelVec) {
-        super.travel(pTravelVec);
+    public boolean boost() {
+        return this.steering.boost(this.getRandom());
     }
 
     static class WaterPathNavigation extends GroundPathNavigation {

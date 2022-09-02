@@ -26,11 +26,12 @@ import software.bernie.geckolib3.GeckoLib;
 @Mod(FarwaterAddons.MOD_ID)
 public class FarwaterAddons {
     public static final String MOD_ID = "farwateraddons";
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
 
     public FarwaterAddons() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModItems.register(eventBus);
         ModBlocks.register(eventBus);
 
         ModPaintings.register(eventBus);

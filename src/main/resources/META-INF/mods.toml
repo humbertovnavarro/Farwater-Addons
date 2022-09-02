@@ -36,6 +36,14 @@ ordering="NONE"
 side="BOTH"
 
 [[dependencies.farwateraddons]]
+modId="tconstruct"
+mandatory=true
+versionRange="${tconstruct_range}"
+ordering="NONE"
+side="BOTH"
+
+
+[[dependencies.farwateraddons]]
 modId="jei"
 mandatory=false
 versionRange="${jei_range}"

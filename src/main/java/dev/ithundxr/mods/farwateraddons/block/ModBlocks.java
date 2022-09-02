@@ -29,6 +29,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> AMETHYST_GLASS = registerBlock("amethyst_glass",
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion()), ModCreativeModeTab.FARWATERADDONS_TAB);
 
+    public static final RegistryObject<Block> CLEAR_AMETHYST_GLASS = registerBlock("clear_amethyst_glass",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion()), ModCreativeModeTab.FARWATERADDONS_TAB);
+
 
 
 

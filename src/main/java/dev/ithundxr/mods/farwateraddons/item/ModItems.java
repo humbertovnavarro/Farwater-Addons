@@ -59,6 +59,9 @@ public class ModItems {
             () -> new ForgeSpawnEggItem(ModEntityTypes.CAPYBARA,0x9e5d39, 0x412f24,
                     new Item.Properties().tab(ModCreativeModeTab.FARWATERADDONS_TAB)));
 
+    public static final RegistryObject<Item> ORANGE_ON_A_STICK = ITEMS.register("orange_on_a_stick",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.FARWATERADDONS_TAB)));
+
     public static final RegistryObject<Item> RECALL_AMULET = ITEMS.register("recall_amulet", RecallAmulet::new);
 
     public static final RegistryObject<Item> BLANK_MUSIC_DISC = ITEMS.register("blank_music_disc",

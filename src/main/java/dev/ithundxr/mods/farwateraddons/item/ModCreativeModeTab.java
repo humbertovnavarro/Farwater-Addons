@@ -7,7 +7,7 @@ public class ModCreativeModeTab {
     public static final CreativeModeTab FARWATERADDONS_TAB = new CreativeModeTab("farwateraddonstab") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ModItems.CAKECOIN.get());
+            return new ItemStack(ModItems.COTTONCANDY.get());
         }
     };
 }

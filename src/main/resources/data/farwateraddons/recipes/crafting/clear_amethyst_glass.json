@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "tconstruct:clear_glass"
+    },
+    {
+      "item": "tconstruct:clear_glass"
+    },
+    {
+      "item": "tconstruct:clear_glass"
+    },
+    {
+      "item": "tconstruct:clear_glass"
+    },
+    {
+      "item": "minecraft:amethyst_shard"
+    },
+    {
+      "item": "tconstruct:clear_glass"
+    },
+    {
+      "item": "tconstruct:clear_glass"
+    },
+    {
+      "item": "tconstruct:clear_glass"
+    },
+    {
+      "item": "tconstruct:clear_glass"
+    }
+  ],
+  "result": {
+    "item": "farwateraddons:clear_amethyst_glass",
+    "count": 8
+  }
+}

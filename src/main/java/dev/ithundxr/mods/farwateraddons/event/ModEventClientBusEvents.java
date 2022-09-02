@@ -21,6 +21,7 @@ public class ModEventClientBusEvents {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.COTTON_PLANT.get(), RenderType.cutout());
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.AMETHYST_GLASS.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.CLEAR_AMETHYST_GLASS.get(), RenderType.cutout());
 
         ModItemProperties.addCustomItemProperties();
 

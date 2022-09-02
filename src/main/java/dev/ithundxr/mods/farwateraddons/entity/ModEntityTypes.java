@@ -2,9 +2,6 @@ package dev.ithundxr.mods.farwateraddons.entity;
 
 import dev.ithundxr.mods.farwateraddons.FarwaterAddons;
 import dev.ithundxr.mods.farwateraddons.entity.custom.CapybaraEntity;
-import dev.ithundxr.mods.farwateraddons.entity.custom.HyperRaccoonTokenBoss;
-import dev.ithundxr.mods.farwateraddons.entity.custom.IThundxrTokenBoss;
-import dev.ithundxr.mods.farwateraddons.entity.custom.NovaNightimeTokenBoss;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;

@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:block/flower_pot_empty_45",
+	"textures": {
+		"vines": "block/flower_pot_flowering_azalea_bush",
+		"soil": "block/moss_block"
+	}
+}

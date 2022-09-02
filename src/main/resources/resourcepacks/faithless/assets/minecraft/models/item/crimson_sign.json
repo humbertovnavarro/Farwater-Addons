@@ -1,0 +1,7 @@
+{
+	"parent": "item/oak_sign",
+	"textures": {
+		"0": "item/crimson_sign",
+		"1": "entity/signs/crimson"
+	}
+}

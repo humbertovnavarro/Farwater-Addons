@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/template_cauldron_level2",
+  "textures": {
+    "content": "minecraft:block/powder_snow",
+    "inside": "minecraft:block/cauldron_inner",
+    "particle": "minecraft:block/cauldron_side_snow2",
+    "top": "minecraft:block/cauldron_top_snow2",
+    "bottom": "minecraft:block/cauldron_bottom",
+    "side": "minecraft:block/cauldron_side_snow2",
+	"5": "block/cauldron_side_inner_snow2"
+  }
+}

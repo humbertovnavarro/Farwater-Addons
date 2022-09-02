@@ -1,0 +1,9 @@
+{
+	"parent": "minecraft:item/torch",
+	"ambientocclusion": false,
+	"textures": {
+		"2": "block/redstone_torch",
+		"layer0": "item/redstone_torch",
+		"torch_flame_e": "block/redstone_torch_flame"
+	}
+}

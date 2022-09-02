@@ -1,0 +1,7 @@
+{
+	"parent": "item/bowl",
+	"textures": {
+		"1": "item/rabbit_stew",
+		"particle": "item/rabbit_stew"
+	}
+}

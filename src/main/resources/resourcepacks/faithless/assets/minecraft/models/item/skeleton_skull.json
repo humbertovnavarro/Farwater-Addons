@@ -1,0 +1,58 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"ambientocclusion": false,
+	"textures": {
+		"1": "entity/skeleton/skeleton",
+		"particle": "entity/skeleton/skeleton",
+		"flowerpot": "item/skeleton_skull"
+	},
+	"elements": [
+		{
+			"name": "gui",
+			"from": [6, 16, 6],
+			"to": [10, 16, 10],
+			"shade": false,
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"down": {"uv": [0, 0, 16, 16], "texture": "#flowerpot"}
+			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [2, 4, 4, 8], "texture": "#1", "cullface": "north"},
+				"east": {"uv": [0, 4, 2, 8], "texture": "#1", "cullface": "north"},
+				"south": {"uv": [6, 4, 8, 8], "texture": "#1", "cullface": "north"},
+				"west": {"uv": [4, 4, 6, 8], "texture": "#1", "cullface": "north"},
+				"up": {"uv": [2, 0, 4, 4], "rotation": 180, "texture": "#1", "cullface": "north"}
+			}
+		},
+		{
+			"from": [0, 0, 16],
+			"to": [16, 16, 0],
+			"faces": {
+				"north": {"uv": [6, 4, 8, 8], "texture": "#1", "cullface": "north"},
+				"east": {"uv": [4, 4, 6, 8], "texture": "#1", "cullface": "north"},
+				"south": {"uv": [2, 4, 4, 8], "texture": "#1", "cullface": "north"},
+				"west": {"uv": [0, 4, 2, 8], "texture": "#1", "cullface": "north"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"gui": {
+			"rotation": [270, 0, 0],
+			"scale": [4, 1.4, 4]
+		}
+	},
+	"groups": [
+		{
+			"name": "skeleton_skull",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1, 2]
+		}
+	]
+}

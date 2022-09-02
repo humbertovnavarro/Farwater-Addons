@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross_tall_up",
+  "textures": {
+    "cross": "minecraft:block/dead_horn_coral_tall"
+  }
+}

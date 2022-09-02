@@ -1,0 +1,12 @@
+{
+  "multipart": [
+	{
+      "apply": [
+		{ "model": "minecraft:block/potted_cactus" },
+		{ "model": "minecraft:block/potted_cactus_22" },
+		{ "model": "minecraft:block/potted_cactus_-22" },
+		{ "model": "minecraft:block/potted_cactus_45" }
+      ]
+    }
+  ]
+}

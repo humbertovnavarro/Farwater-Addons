@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+		{ "model": "minecraft:block/flower_pot_allium_0" },
+		{ "model": "minecraft:block/flower_pot_allium_22" },
+		{ "model": "minecraft:block/flower_pot_allium_-22" },
+		{ "model": "minecraft:block/flower_pot_allium_45" }
+	]
+  }
+}

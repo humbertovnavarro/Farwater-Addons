@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_glazed_terracotta",
+  "textures": {
+    "pattern": "minecraft:block/netherrack_rough",
+    "particle": "minecraft:block/netherrack_particle"
+  }
+}

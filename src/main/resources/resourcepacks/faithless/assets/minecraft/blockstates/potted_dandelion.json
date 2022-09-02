@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+		{ "model": "minecraft:block/flower_pot_dandelion_0" },
+		{ "model": "minecraft:block/flower_pot_dandelion_22" },
+		{ "model": "minecraft:block/flower_pot_dandelion_-22" },
+		{ "model": "minecraft:block/flower_pot_dandelion_45" }
+	]
+  }
+}

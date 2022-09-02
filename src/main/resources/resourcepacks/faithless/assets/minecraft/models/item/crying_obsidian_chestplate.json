@@ -1,0 +1,7 @@
+{
+	"parent": "item/golden_chestplate",
+	"textures": {
+		"1": "optifine/cit/tools/crying_obsidian/crying_obsidian_chestplate",
+		"lantern": "optifine/cit/tools/crying_obsidian/crying_obsidian_layer_1"
+	}
+}

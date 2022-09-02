@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/oak_fence_post",
+	"textures": {
+		"texture": "block/spruce_fence",
+		"log": "block/stripped_spruce_log_top",
+		"particle": "block/spruce_planks"
+	}
+}

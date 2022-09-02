@@ -1,0 +1,7 @@
+{
+	"parent": "item/golden_boots",
+	"textures": {
+		"1": "optifine/cit/tools/copper/copper_boots",
+		"lantern": "optifine/cit/tools/copper/copper_layer_1"
+	}
+}

@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/pumpkin_stem_stage7",
+	"textures": {
+		"2": "block/melon_stem_attatched",
+		"3": "block/melon_stem_grown",
+		"particle": "block/melon_stem_grown"
+	}
+}

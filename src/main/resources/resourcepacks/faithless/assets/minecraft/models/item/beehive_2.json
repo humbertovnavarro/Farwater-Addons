@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:item/beehive_1",
+	"textures": {
+		"4": "block/beehive_2"
+	}
+}

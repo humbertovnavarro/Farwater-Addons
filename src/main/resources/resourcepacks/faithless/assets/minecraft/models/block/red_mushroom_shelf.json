@@ -1,0 +1,36 @@
+{
+	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
+	"textures": {
+		"1": "block/red_mushroom_shelf"
+	},
+	"elements": [
+		{
+			"from": [-8, -5, -8],
+			"to": [24, -5, 24],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, -2, 8]},
+			"faces": {
+				"up": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"down": {"uv": [0, 16, 16, 0], "texture": "#1"}
+			}
+		},
+		{
+			"from": [-8, -10, -8],
+			"to": [24, -10, 24],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, -2, 8]},
+			"faces": {
+				"up": {"uv": [0, 0, 16, 16], "rotation": 270, "texture": "#1"},
+				"down": {"uv": [16, 0, 0, 16], "rotation": 270, "texture": "#1"}
+			}
+		},
+		{
+			"from": [-8, -13, -8],
+			"to": [24, -13, 24],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, -2, 8]},
+			"faces": {
+				"up": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [16, 0, 0, 16], "rotation": 90, "texture": "#1"}
+			}
+		}
+	]
+}

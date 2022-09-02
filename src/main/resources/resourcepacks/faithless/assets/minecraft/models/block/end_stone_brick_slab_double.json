@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "minecraft:block/end_stone_brick_slab_double",
+    "side": "minecraft:block/end_stone_brick_slab_double"
+  }
+}

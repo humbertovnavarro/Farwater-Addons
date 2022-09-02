@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:block/flower_pot_cross_22",
+	"textures": {
+		"vines": "block/flower_pot_dark_oak_sapling",
+		"plant": "block/dark_oak_sapling"
+	}
+}

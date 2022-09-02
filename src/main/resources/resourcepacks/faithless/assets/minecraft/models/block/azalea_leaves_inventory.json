@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves_inventory",
+  "textures": {
+    "leaves": "minecraft:block/azalea_leaves_tree"
+  }
+}

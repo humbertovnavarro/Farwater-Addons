@@ -1,0 +1,7 @@
+{
+	"parent": "item/golden_boots",
+	"textures": {
+		"1": "optifine/cit/tools/prismarine/prismarine_boots",
+		"lantern": "optifine/cit/tools/prismarine/prismarine_layer_1"
+	}
+}

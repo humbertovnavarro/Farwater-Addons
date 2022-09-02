@@ -1,0 +1,63 @@
+{
+  "multipart": [
+    {
+      "when": {"north": "true", "down": "true" },
+      "apply": {"model": "minecraft:block/chorus_plant_side"}
+    },
+    {
+      "when": {"east": "true", "down": "true" },
+      "apply": {"model": "minecraft:block/chorus_plant_side", "y": 90 }
+    },
+    {
+      "when": {"south": "true", "down": "true" },
+      "apply": {"model": "minecraft:block/chorus_plant_side", "y": 180 }
+    },
+    {
+      "when": {"west": "true", "down": "true" },
+      "apply": {"model": "minecraft:block/chorus_plant_side", "y": 270 }
+    },
+    {
+      "when": {"up": "true" },
+      "apply": {"model": "minecraft:block/chorus_plant_down", "x": 180 }
+    },
+    {
+      "when": {"down": "true" },
+      "apply": {"model": "minecraft:block/chorus_plant_down" }
+    },
+    {
+      "when": {"north": "true", "down": "false" },
+      "apply": {"model": "minecraft:block/chorus_vine"}
+    },
+    {
+      "when": {"east": "true", "down": "false" },
+      "apply": {"model": "minecraft:block/chorus_vine", "y": 90 }
+    },
+    {
+      "when": {"south": "true", "down": "false" },
+      "apply": {"model": "minecraft:block/chorus_vine", "y": 180 }
+    },
+    {
+      "when": {"west": "true", "down": "false" },
+      "apply": {"model": "minecraft:block/chorus_vine", "y": 270 }
+    },
+    {
+      "when": {"north": "false", "east": "false", "south": "false", "west": "false", "up": "true", "down": "true" },
+      "apply": [
+	    {"model": "minecraft:block/chorus_leaf" },
+	    {"model": "minecraft:block/chorus_leaf", "y": 90 },
+	    {"model": "minecraft:block/chorus_leaf", "y": 180 },
+	    {"model": "minecraft:block/chorus_leaf", "y": 270 },
+	    {"model": "minecraft:block/chorus_fruit_small" },
+	    {"model": "minecraft:block/chorus_fruit_small", "y": 90 },
+	    {"model": "minecraft:block/chorus_fruit_small", "y": 180 },
+	    {"model": "minecraft:block/chorus_fruit_small", "y": 270 }
+		]
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/chorus_plant_noside" },
+        { "model": "minecraft:block/chorus_plant_noside1" }
+      ]
+    }
+  ]
+}

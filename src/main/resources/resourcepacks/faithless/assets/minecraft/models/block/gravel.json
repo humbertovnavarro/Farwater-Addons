@@ -1,0 +1,8 @@
+{
+	"parent": "minecraft:block/sand",
+	"textures": {
+		"0": "block/gravel",
+		"1": "block/gravel_unstable",
+		"particle": "block/gravel"
+	}
+}

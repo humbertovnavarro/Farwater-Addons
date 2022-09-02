@@ -1,0 +1,8 @@
+{
+	"parent": "item/skeleton_skull",
+	"textures": {
+		"1": "entity/creeper/creeper",
+		"flowerpot": "item/creeper_head",
+		"particle": "entity/creeper/creeper"
+	}
+}

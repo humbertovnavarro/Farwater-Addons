@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:block/flower_pot_cross_0",
+	"textures": {
+		"vines": "block/flower_pot_birch_sapling",
+		"plant": "block/birch_sapling"
+	}
+}

@@ -1,0 +1,6 @@
+{   "parent": "block/grass_stones_2",
+	"textures": {
+		"0": "block/grass_dirt",
+		"particle": "block/grass_dirt"
+	}
+}

@@ -1,0 +1,42 @@
+{
+	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
+	"textures": {
+		"3": "block/kelp_fruit",
+		"particle": "block/kelp_plant",
+		"cross": "block/kelp_plant"
+	},
+	"elements": [
+		{
+			"from": [-8, -16, 8],
+			"to": [24, 16, 8],
+			"shade": false,
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#cross", "cullface": "down"},
+				"south": {"uv": [16, 0, 0, 16], "texture": "#cross", "cullface": "down"}
+			}
+		},
+		{
+			"from": [0, -16, 8],
+			"to": [16, 0, 8],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#3"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "kelp_plant",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": []
+		},
+		{
+			"name": "kelp_fruit",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1]
+		}
+	]
+}

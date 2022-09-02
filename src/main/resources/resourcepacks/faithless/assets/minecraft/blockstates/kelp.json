@@ -1,0 +1,48 @@
+{
+  "multipart": [
+    {
+      "apply": 
+      { "model": "minecraft:block/kelp" }
+	},
+	{
+      "apply": [
+		{ "model": "minecraft:block/kelp_branch" },
+		{ "model": "minecraft:block/kelp_branch_22" },
+		{ "model": "minecraft:block/kelp_branch_-22" },
+		{ "model": "minecraft:block/kelp_branch_45" },
+		{ "model": "minecraft:block/kelp_branch", "y": 90 },
+		{ "model": "minecraft:block/kelp_branch_22", "y": 90 },
+		{ "model": "minecraft:block/kelp_branch_-22", "y": 90 },
+		{ "model": "minecraft:block/kelp_branch_45", "y": 90 },
+		{ "model": "minecraft:block/kelp_branch", "y": 180 },
+		{ "model": "minecraft:block/kelp_branch_22", "y": 180 },
+		{ "model": "minecraft:block/kelp_branch_-22", "y": 180 },
+		{ "model": "minecraft:block/kelp_branch_45", "y": 180 },
+		{ "model": "minecraft:block/kelp_branch", "y": 270 },
+		{ "model": "minecraft:block/kelp_branch_22", "y": 270 },
+		{ "model": "minecraft:block/kelp_branch_-22", "y": 270 },
+		{ "model": "minecraft:block/kelp_branch_45", "y": 270 }
+      ]
+    },
+	{
+      "apply": [
+		{ "model": "minecraft:block/kelp_branch_45", "y": 270 },
+		{ "model": "minecraft:block/kelp_branch" },
+		{ "model": "minecraft:block/kelp_branch_22" },
+		{ "model": "minecraft:block/kelp_branch_-22" },
+		{ "model": "minecraft:block/kelp_branch_45" },
+		{ "model": "minecraft:block/kelp_branch", "y": 90 },
+		{ "model": "minecraft:block/kelp_branch_22", "y": 90 },
+		{ "model": "minecraft:block/kelp_branch_-22", "y": 90 },
+		{ "model": "minecraft:block/kelp_branch_45", "y": 90 },
+		{ "model": "minecraft:block/kelp_branch", "y": 180 },
+		{ "model": "minecraft:block/kelp_branch_22", "y": 180 },
+		{ "model": "minecraft:block/kelp_branch_-22", "y": 180 },
+		{ "model": "minecraft:block/kelp_branch_45", "y": 180 },
+		{ "model": "minecraft:block/kelp_branch", "y": 270 },
+		{ "model": "minecraft:block/kelp_branch_22", "y": 270 },
+		{ "model": "minecraft:block/kelp_branch_-22", "y": 270 }
+      ]
+    }
+  ]
+}

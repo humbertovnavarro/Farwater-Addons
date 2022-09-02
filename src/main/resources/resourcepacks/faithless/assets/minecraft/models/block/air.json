@@ -1,0 +1,14 @@
+{    "textures": {
+        "particle": "block/air",
+        "air": "#air"
+    },
+    "elements": [
+        {   "from": [ 0, 0, 0 ],
+            "to": [ 0, 0, 0 ],
+            "shade": false,
+            "faces": {
+                "down": { "uv": [ 0, 0, 0, 0 ], "texture": "#air", "cullface": "down" }
+            }
+        }
+    ]
+}

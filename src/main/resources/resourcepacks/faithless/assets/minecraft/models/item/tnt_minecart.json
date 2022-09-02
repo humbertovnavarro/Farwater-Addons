@@ -1,0 +1,11 @@
+{
+	"parent": "item/furnace_minecart",
+	"ambientocclusion": false,
+	"textures": {
+		"1": "item/tnt_minecart",
+		"2": "block/tnt_side",
+		"3": "block/tnt_side",
+		"4": "block/tnt_top",
+		"lantern": "entity/minecart_item"
+	}
+}

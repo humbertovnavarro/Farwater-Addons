@@ -1,0 +1,35 @@
+{
+	"parent": "block/block",
+	"textures": {
+		"all": "block/crying_obsidian",
+		"outline": "block/crying_obsidian_outline",
+		"particle": "block/crying_obsidian"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#all", "cullface": "north"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#all", "cullface": "east"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#all", "cullface": "south"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#all", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#all", "cullface": "up"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#all", "cullface": "down"}
+			}
+		},
+		{
+			"from": [-0.25, -0.25, 16.25],
+			"to": [16.25, 16.25, -0.25],
+			"shade": false,
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#outline", "cullface": "south"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#outline", "cullface": "east"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#outline", "cullface": "north"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#outline", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#outline", "cullface": "up"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#outline", "cullface": "down"}
+			}
+		}
+	]
+}

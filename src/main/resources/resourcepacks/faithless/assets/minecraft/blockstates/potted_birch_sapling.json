@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+		{ "model": "minecraft:block/flower_pot_birch_sapling_0" },
+		{ "model": "minecraft:block/flower_pot_birch_sapling_22" },
+		{ "model": "minecraft:block/flower_pot_birch_sapling_-22" },
+		{ "model": "minecraft:block/flower_pot_birch_sapling_45" }
+	]
+  }
+}

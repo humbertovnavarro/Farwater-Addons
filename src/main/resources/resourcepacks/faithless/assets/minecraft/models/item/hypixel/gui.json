@@ -1,0 +1,63 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1": "hypixel/button",
+		"2": "hypixel/close",
+		"particle": "hypixel/close"
+	},
+	"elements": [
+		{
+			"from": [-1, -1, -14.75],
+			"to": [17, 17, -14.75],
+			"faces": {
+				"south": {"uv": [0.8, 0.8, 15.2, 15.2], "texture": "#1"}
+			}
+		},
+		{
+			"from": [0, 0, -13.75],
+			"to": [16, 16, -13.75],
+			"faces": {
+				"south": {"uv": [0, 0, 16, 16], "texture": "#2"}
+			}
+		},
+		{
+			"from": [-2, -2, -15],
+			"to": [18, 18, -15],
+			"faces": {
+				"south": {"uv": [0, 0, 16, 16], "texture": "#1"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"scale": [0, 0, 0]
+		},
+		"thirdperson_lefthand": {
+			"scale": [0, 0, 0]
+		},
+		"firstperson_righthand": {
+			"scale": [0, 0, 0]
+		},
+		"firstperson_lefthand": {
+			"scale": [0, 0, 0]
+		},
+		"ground": {
+			"scale": [0, 0, 0]
+		},
+		"head": {
+			"scale": [0, 0, 0]
+		},
+		"fixed": {
+			"scale": [0, 0, 0]
+		}
+	},
+	"groups": [
+		{
+			"name": "gui",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1, 2]
+		}
+	]
+}

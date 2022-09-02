@@ -1,0 +1,19 @@
+{
+	"ambientocclusion": false,
+	"textures": {
+		"vine": "block/vine",
+		"particle": "block/vine"
+	},
+	"elements": [
+		{
+			"from": [8, -8, 0],
+			"to": [8, 17, 16],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8], "rescale": true},
+			"faces": {
+				"east": {"uv": [3.5, 3.5, 12.5, 16], "texture": "#vine", "tintindex": 0},
+				"west": {"uv": [3.5, 3.5, 12.5, 16], "texture": "#vine", "tintindex": 0}
+			}
+		}
+	]
+}

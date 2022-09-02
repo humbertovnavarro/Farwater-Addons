@@ -1,0 +1,19 @@
+{
+	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
+	"texture_size": [48, 32],
+	"textures": {
+		"particle": "redstone/particle"
+	},
+	"elements": [
+		{
+			"from": [3, 0.75, 3],
+			"to": [13, 1.25, 13],
+			"shade": false,
+			"faces": {
+				"up": {"uv": [0, 8, 5.33333, 16], "texture": "#wire"},
+				"down": {"uv": [5.33333, 16, 0, 8], "texture": "#wire", "cullface": "down"}
+			}
+		}
+	]
+}

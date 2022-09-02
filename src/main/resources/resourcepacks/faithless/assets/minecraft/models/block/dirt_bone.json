@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "minecraft:block/dirt_bone",
+    "side": "minecraft:block/dirt",
+    "top": "minecraft:block/dirt",
+    "particle": "minecraft:block/dirt"
+  }
+}

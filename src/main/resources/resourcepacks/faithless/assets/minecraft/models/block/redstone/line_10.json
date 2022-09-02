@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/redstone/redstone_line",
+	"textures": {
+		"wire": "redstone/power_10"
+	}
+}

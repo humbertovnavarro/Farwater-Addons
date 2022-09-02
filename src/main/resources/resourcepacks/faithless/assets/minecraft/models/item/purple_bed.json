@@ -1,0 +1,7 @@
+{
+	"parent": "item/red_bed",
+	"textures": {
+		"1": "entity/bed/purple",
+		"4": "item/purple_bed"
+	}
+}

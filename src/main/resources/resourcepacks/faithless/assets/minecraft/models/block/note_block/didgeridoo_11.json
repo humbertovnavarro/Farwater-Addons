@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "minecraft:block/note_block/didgeridoo_11",
+    "side": "minecraft:block/note_block"
+  }
+}

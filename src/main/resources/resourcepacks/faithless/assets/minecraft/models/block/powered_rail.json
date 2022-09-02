@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/rail",
+	"textures": {
+		"0": "block/powered_rail_3d"
+	}
+}

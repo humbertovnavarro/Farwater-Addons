@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+		{ "model": "minecraft:block/flower_pot_oxeye_daisy_0" },
+		{ "model": "minecraft:block/flower_pot_oxeye_daisy_22" },
+		{ "model": "minecraft:block/flower_pot_oxeye_daisy_-22" },
+		{ "model": "minecraft:block/flower_pot_oxeye_daisy_45" }
+	]
+  }
+}

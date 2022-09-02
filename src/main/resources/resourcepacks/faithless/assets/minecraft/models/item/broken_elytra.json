@@ -1,0 +1,9 @@
+{
+	"parent": "item/elytra",
+	"ambientocclusion": false,
+	"textures": {
+		"1": "item/broken_elytra",
+		"2": "entity/elytra",
+		"particle": "entity/broken_elytra"
+	}
+}

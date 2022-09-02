@@ -1,0 +1,7 @@
+{
+	"parent": "item/oak_sign",
+	"textures": {
+		"0": "item/mangrove_sign",
+		"1": "entity/signs/mangrove"
+	}
+}

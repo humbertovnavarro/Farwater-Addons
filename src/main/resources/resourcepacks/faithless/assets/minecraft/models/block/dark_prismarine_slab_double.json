@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "minecraft:block/dark_prismarine_slab_double",
+    "side": "minecraft:block/dark_prismarine_slab_double"
+  }
+}

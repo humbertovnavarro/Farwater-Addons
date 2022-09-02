@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross_tall_up",
+  "textures": {
+    "cross": "minecraft:block/red_mushrooms_large"
+  }
+}

@@ -1,0 +1,35 @@
+Pack link: https://www.curseforge.com/minecraft/texture-packs/faithless
+
+My socials: https://linktr.ee/stitch.sprites
+
+My Discord: https://discord.gg/wcmxjtV 
+
+- INFO & FAQ -
+
+Q) Will the pack update every time something new is added?
+A) You will need to re-download the resource pack if you would like any new features to be added. It is not automatically updated ingame unfortunately.
+
+Q) Can you port this to bedrock
+A) It is a work in progress and hopefully planned to be available on the marketplace around autumn time 
+
+Q) Can I use this pack for my modpack/video/personal pack/ect...
+A) My answer will always be yes, under the condition credit is properly given with a link to the pack's original curseforge site https://www.curseforge.com/minecraft/texture-packs/faithless
+
+Q) Can you make an items/gui/block/ect... only version? I dont like "x"
+A) You may edit the pack yourself if you know how. I dont have plans on breaking up a project I worked hard to put together, at least not until I can afford my own website
+
+Q) Why does my version look different than yours?
+A) Could be one of 3 reasons. Either 
+		1 - your version is outdated and requires to be redownloaded on the official site : https://www.curseforge.com/minecraft/texture-pa
+		2 - An addon was being used, which allows some personal preference customization. addons are found here https://www.curseforge.com/minecraft/texture-packs/faithless/files
+		3 - You dont have optifine installed, or if you do then some settings may not be set up properly
+
+---------------------------------------------------------------------------------------------------
+
+- CREDITS -  
+
+Tropical Fish and Clock Implementation
+https://dakedres.tumblr.com
+
+Porting OG panorama to 1.19.1
+Snipr#6180

@@ -1,0 +1,47 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"ambientocclusion": false,
+	"textures": {
+		"1": "block/chorus_plant_side",
+		"2": "block/chorus_plant_top",
+		"particle": "block/chorus_plant",
+		"texture": "block/chorus_plant"
+	},
+	"elements": [
+		{
+			"from": [2, 2, 2],
+			"to": [14, 14, 14],
+			"faces": {
+				"north": {"uv": [2, 2, 14, 14], "texture": "#1"},
+				"east": {"uv": [2, 2, 14, 14], "texture": "#1"},
+				"south": {"uv": [2, 2, 14, 14], "texture": "#1"},
+				"west": {"uv": [2, 2, 14, 14], "texture": "#1"},
+				"up": {"uv": [2, 2, 14, 14], "texture": "#2"},
+				"down": {"uv": [2, 2, 14, 14], "texture": "#texture"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "chorus_plant_noside1",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [
+				{
+					"name": "chorus_plant_noside",
+					"origin": [8, 8, 8],
+					"color": 0,
+					"children": [
+						{
+							"name": "chorus_plant_noside",
+							"origin": [8, 8, 8],
+							"color": 0,
+							"children": [0]
+						}
+					]
+				}
+			]
+		}
+	]
+}

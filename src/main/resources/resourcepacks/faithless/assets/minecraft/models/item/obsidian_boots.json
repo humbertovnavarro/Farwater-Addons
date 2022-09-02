@@ -1,0 +1,7 @@
+{
+	"parent": "item/golden_boots",
+	"textures": {
+		"1": "optifine/cit/tools/obsidian/obsidian_boots",
+		"lantern": "optifine/cit/tools/obsidian/obsidian_layer_1"
+	}
+}

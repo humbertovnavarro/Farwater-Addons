@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_column_tilt",
+  "textures": {
+    "top": "minecraft:block/birch_log_top",
+    "bottom": "minecraft:block/birch_log_top",
+    "side": "minecraft:block/birch_log",
+    "particle": "minecraft:block/oak_log"
+  }
+}

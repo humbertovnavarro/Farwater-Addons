@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/cube_all_glow",
+  "textures": {
+    "up": "minecraft:block/shroomlight",
+    "down": "minecraft:block/shroomlight",
+    "side": "minecraft:block/shroomlight",
+    "front": "minecraft:block/shroomlight",
+    "particle": "minecraft:block/shroomlight"
+  }
+}

@@ -1,0 +1,8 @@
+{
+	"parent": "item/bucket",
+	"ambientocclusion": false,
+	"textures": {
+		
+    "layer0": "item/axolotl_bucket_0_baby"
+	}
+}

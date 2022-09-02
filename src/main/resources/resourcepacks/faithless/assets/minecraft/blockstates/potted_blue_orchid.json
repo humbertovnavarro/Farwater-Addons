@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+		{ "model": "minecraft:block/flower_pot_blue_orchid_0" },
+		{ "model": "minecraft:block/flower_pot_blue_orchid_22" },
+		{ "model": "minecraft:block/flower_pot_blue_orchid_-22" },
+		{ "model": "minecraft:block/flower_pot_blue_orchid_45" }
+	]
+  }
+}

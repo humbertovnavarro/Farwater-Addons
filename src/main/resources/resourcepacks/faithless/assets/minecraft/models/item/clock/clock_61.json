@@ -1,0 +1,8 @@
+{
+  "parent": "item/clock",
+  "textures": {
+    "minute": "item/clock/13",
+    "hour": "item/clock/3",
+    "info": "item/clock/info_player_sleep"
+  }
+}

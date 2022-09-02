@@ -1,0 +1,16 @@
+{
+  "layers": [
+    {
+      "textures": {
+        "top": "minecraft:block/dirt_path_top",
+        "side": "minecraft:block/dirt_path_side",
+        "overrides": {
+          "blend_up": "lambdabettergrass:block/dirt_path_side",
+          "blend_up_m": "lambdabettergrass:block/dirt_path_side_m",
+          "arch": "lambdabettergrass:block/dirt_path_arch",
+          "connect": "lambdabettergrass:block/dirt_path_covered"
+        }
+	  }
+    }
+  ]
+}

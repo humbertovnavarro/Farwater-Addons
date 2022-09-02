@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/attached_pumpkin_stem",
+	"textures": {
+		"2": "block/melon_stem_attatched",
+		"particle": "block/melon_stem_attatched"
+	}
+}

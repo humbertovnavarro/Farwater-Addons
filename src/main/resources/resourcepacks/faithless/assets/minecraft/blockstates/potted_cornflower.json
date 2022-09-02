@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+		{ "model": "minecraft:block/flower_pot_cornflower_0" },
+		{ "model": "minecraft:block/flower_pot_cornflower_22" },
+		{ "model": "minecraft:block/flower_pot_cornflower_-22" },
+		{ "model": "minecraft:block/flower_pot_cornflower_45" }
+	]
+  }
+}

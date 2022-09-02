@@ -1,0 +1,5 @@
+{	"parent": "item/shulker_box_open",
+	"textures": {
+		"gui": "item/cyan_shulker_box_open"
+	}
+}

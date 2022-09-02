@@ -1,0 +1,7 @@
+{
+	"parent": "item/fishing_rod",
+	"textures": {
+		"0": "item/carrot_on_a_stick",
+		"particle": "item/carrot_on_a_stick"
+	}
+}

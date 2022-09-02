@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/tinted_cross",
+	"textures": {
+		"particle": "block/grass_short",
+		"cross": "block/grass_short"
+	}
+}

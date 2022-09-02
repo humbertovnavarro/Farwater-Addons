@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/lily_flower1",
+    "textures": {
+		"cross": "minecraft:block/lily_flower2"
+    }
+}

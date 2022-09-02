@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/rail",
+  "textures": {
+		"0": "block/activator_rail_on_3d",
+		"1": "item/activator_rail"
+	}
+}

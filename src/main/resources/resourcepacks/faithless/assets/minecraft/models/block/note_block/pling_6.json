@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "minecraft:block/note_block/pling_6",
+    "side": "minecraft:block/note_block"
+  }
+}

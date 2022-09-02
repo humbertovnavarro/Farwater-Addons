@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop_cross_small",
+  "textures": {
+    "crop": "minecraft:block/beetroots_stage3"
+  }
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "item/golden_leggings",
+	"textures": {
+		"1": "item/netherite_leggings",
+		"lantern": "models/armor/netherite_layer_2"
+	}
+}

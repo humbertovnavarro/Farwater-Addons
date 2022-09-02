@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+		{ "model": "minecraft:block/flower_pot_lily_of_the_valley_0" },
+		{ "model": "minecraft:block/flower_pot_lily_of_the_valley_22" },
+		{ "model": "minecraft:block/flower_pot_lily_of_the_valley_-22" },
+		{ "model": "minecraft:block/flower_pot_lily_of_the_valley_45" }
+	]
+  }
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "item/golden_helmet",
+	"textures": {
+		"1": "optifine/cit/tools/jeb_netherite/jeb_netherite_helmet",
+		"lantern": "optifine/cit/tools/jeb_netherite/jeb_netherite_layer_1"
+	}
+}

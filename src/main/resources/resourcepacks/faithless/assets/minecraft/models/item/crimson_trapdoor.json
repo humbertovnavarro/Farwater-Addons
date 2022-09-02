@@ -1,0 +1,7 @@
+{
+	"parent": "item/acacia_trapdoor",
+	"textures": {
+		"0": "block/crimson_trapdoor",
+		"1": "item/crimson_trapdoor"
+	}
+}

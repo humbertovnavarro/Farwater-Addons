@@ -1,0 +1,35 @@
+{
+	"ambientocclusion": false,
+	"textures": {
+		"2": "block/pumpkin_stem_attatched",
+		"particle": "block/pumpkin_stem_attatched"
+	},
+	"elements": [
+		{
+			"from": [0, -1, 8],
+			"to": [16, 15, 8],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [8, 8, 16, 16], "texture": "#2"},
+				"south": {"uv": [8, 8, 16, 16], "texture": "#2"}
+			}
+		},
+		{
+			"from": [8, -1, 0],
+			"to": [8, 15, 16],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"east": {"uv": [8, 8, 16, 16], "texture": "#2"},
+				"west": {"uv": [8, 8, 16, 16], "texture": "#2"}
+			}
+		},
+		{
+			"from": [-16, -1, 8],
+			"to": [16, 31, 8],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"south": {"uv": [16, 0, 0, 16], "texture": "#2"}
+			}
+		}
+	]
+}

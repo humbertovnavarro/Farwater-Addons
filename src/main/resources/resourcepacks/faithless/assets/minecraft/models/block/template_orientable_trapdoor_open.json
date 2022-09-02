@@ -1,0 +1,28 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "#texture"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 13],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 16, 16, 0], "texture": "#texture"},
+				"east": {"uv": [0, 0, 3, 16], "rotation": 180, "texture": "#texture", "cullface": "east"},
+				"south": {"uv": [16, 16, 0, 0], "texture": "#texture", "cullface": "south"},
+				"west": {"uv": [13, 0, 16, 16], "rotation": 180, "texture": "#texture", "cullface": "west"},
+				"up": {"uv": [0, 13, 16, 16], "rotation": 180, "texture": "#texture", "cullface": "up"},
+				"down": {"uv": [0, 0, 16, 3], "rotation": 180, "texture": "#texture", "cullface": "down"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "template_orientable_trapdoor_open",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0]
+		}
+	]
+}

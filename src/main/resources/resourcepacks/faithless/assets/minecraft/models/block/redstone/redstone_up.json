@@ -1,0 +1,14 @@
+{
+	"ambientocclusion": false,
+	"elements": [
+		{
+			"from": [0, 1, 15.9],
+			"to": [16, 17, 16],
+			"shade": false,
+			"faces": {
+				"north": {"uv": [5.33333, 0, 10.66667, 8], "texture": "#wire"},
+				"south": {"uv": [5.33333, 8, 10.66667, 0], "texture": "#wire", "cullface": "south"}
+			}
+		}
+	]
+}

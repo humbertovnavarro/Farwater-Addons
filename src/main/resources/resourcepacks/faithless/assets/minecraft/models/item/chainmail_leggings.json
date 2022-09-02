@@ -1,0 +1,7 @@
+{
+	"parent": "item/golden_leggings",
+	"textures": {
+		"1": "item/chainmail_leggings",
+		"lantern": "models/armor/chainmail_layer_2"
+	}
+}

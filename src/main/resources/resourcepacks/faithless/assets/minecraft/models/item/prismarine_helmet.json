@@ -1,0 +1,7 @@
+{
+	"parent": "item/golden_helmet",
+	"textures": {
+		"1": "optifine/cit/tools/prismarine/prismarine_helmet",
+		"lantern": "optifine/cit/tools/prismarine/prismarine_layer_1"
+	}
+}

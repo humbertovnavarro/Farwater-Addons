@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "minecraft:block/netherrack_skull",
+    "side": "minecraft:block/netherrack",
+    "top": "minecraft:block/netherrack",
+    "particle": "minecraft:block/netherrack_particle"
+  }
+}

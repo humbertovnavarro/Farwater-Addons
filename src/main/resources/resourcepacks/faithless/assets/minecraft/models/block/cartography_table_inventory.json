@@ -1,0 +1,11 @@
+{
+	"parent": "minecraft:block/cube_all",
+	"textures": {
+		"north": "block/cartography_table_front",
+		"east": "block/cartography_table_left",
+		"south": "block/cartography_table_back",
+		"west": "block/cartography_table_right",
+		"up": "block/cartography_table_top",
+		"down": "block/cartography_table_bottom"
+	}
+}

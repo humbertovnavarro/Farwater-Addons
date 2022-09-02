@@ -1,0 +1,32 @@
+{   "parent": "block/block",
+	"textures": {
+		"spawner": "minecraft:block/spawner",
+		"particle": "#spawner"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#spawner", "cullface": "north"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#spawner", "cullface": "east"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#spawner", "cullface": "south"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#spawner", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#spawner", "cullface": "up"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#spawner", "cullface": "down"}
+			}
+		},
+		{
+			"to": [0.1, 0.1, 0.1],
+			"from": [15.9, 15.9, 15.9],
+			"faces": {
+				"north": {"uv": [0, 16, 16, 0], "texture": "#spawner", "cullface": "south"},
+				"east": {"uv": [0, 16, 16, 0], "texture": "#spawner", "cullface": "west"},
+				"south": {"uv": [0, 16, 16, 0], "texture": "#spawner", "cullface": "north"},
+				"west": {"uv": [0, 16, 16, 0], "texture": "#spawner", "cullface": "east"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#spawner", "cullface": "down"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#spawner", "cullface": "up"}
+			}
+		}
+	]
+}

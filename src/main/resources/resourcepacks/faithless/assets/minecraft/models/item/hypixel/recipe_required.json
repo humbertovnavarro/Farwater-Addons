@@ -1,0 +1,56 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1": "hypixel/button_small",
+		"2": "hypixel/close",
+		"3": "hypixel/crafting_arrow",
+		"particle": "hypixel/close"
+	},
+	"elements": [
+		{
+			"from": [0, 0, -13.75],
+			"to": [16, 16, -13.75],
+			"faces": {
+				"south": {"uv": [0, 0, 16, 16], "texture": "#2"}
+			}
+		},
+		{
+			"from": [-16, 0, -13.75],
+			"to": [-2, 16, -13.75],
+			"faces": {
+				"south": {"uv": [1, 0, 15, 16], "texture": "#3"}
+			}
+		},
+		{
+			"from": [-1, -1, -15],
+			"to": [17, 17, -15],
+			"faces": {
+				"south": {"uv": [0, 0, 16, 16], "texture": "#1"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"scale": [0, 0, 0]
+		},
+		"thirdperson_lefthand": {
+			"scale": [0, 0, 0]
+		},
+		"firstperson_righthand": {
+			"scale": [0, 0, 0]
+		},
+		"firstperson_lefthand": {
+			"scale": [0, 0, 0]
+		},
+		"ground": {
+			"scale": [0, 0, 0]
+		},
+		"head": {
+			"scale": [0, 0, 0]
+		},
+		"fixed": {
+			"scale": [0, 0, 0]
+		}
+	}
+}

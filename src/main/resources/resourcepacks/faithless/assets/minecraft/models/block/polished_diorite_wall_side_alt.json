@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/brick_wall_side_alt",
+	"textures": {
+		"wall": "block/polished_diorite_wall",
+		"particle": "block/polished_diorite"
+	}
+}

@@ -1,0 +1,38 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/cube",
+	"textures": {
+		"north": "block/smithing_table_front",
+		"south": "block/smithing_table_back",
+		"east": "block/smithing_table_side",
+		"west": "block/smithing_table_side_2",
+		"particle": "block/smithing_table_top",
+		"up": "block/smithing_table_top",
+		"down": "block/smithing_table_bottom"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#north", "cullface": "north"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#east", "cullface": "east"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#south", "cullface": "south"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#west", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#up", "cullface": "up"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#down", "cullface": "down"}
+			}
+		},
+		{
+			"from": [16, 3, 8],
+			"to": [17, 6, 13],
+			"faces": {
+				"north": {"uv": [7, 10, 8, 13], "texture": "#east", "cullface": "east"},
+				"east": {"uv": [3, 10, 8, 13], "texture": "#east", "cullface": "east"},
+				"south": {"uv": [3, 10, 4, 13], "texture": "#east", "cullface": "east"},
+				"up": {"uv": [3, 10, 8, 11], "rotation": 270, "texture": "#east", "cullface": "east"},
+				"down": {"uv": [3, 12, 8, 13], "rotation": 90, "texture": "#east", "cullface": "east"}
+			}
+		}
+	]
+}

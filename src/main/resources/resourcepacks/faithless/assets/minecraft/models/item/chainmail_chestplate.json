@@ -1,0 +1,7 @@
+{
+	"parent": "item/golden_chestplate",
+	"textures": {
+		"1": "item/chainmail_chestplate",
+		"lantern": "models/armor/chainmail_layer_1"
+	}
+}

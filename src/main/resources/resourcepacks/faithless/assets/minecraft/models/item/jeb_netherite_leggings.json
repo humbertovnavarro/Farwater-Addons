@@ -1,0 +1,7 @@
+{
+	"parent": "item/golden_leggings",
+	"textures": {
+		"1": "optifine/cit/tools/jeb_netherite/jeb_netherite_leggings",
+		"lantern": "optifine/cit/tools/jeb_netherite/jeb_netherite_layer_2"
+	}
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "minecraft:block/note_block/basedrum_9",
+    "side": "minecraft:block/note_block"
+  }
+}

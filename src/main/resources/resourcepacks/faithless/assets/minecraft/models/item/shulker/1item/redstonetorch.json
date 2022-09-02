@@ -1,0 +1,6 @@
+{	
+	"parent": "item/shulker_box_open",
+	"textures": {
+		"item1": "item/redstone_torch"
+	}
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/brick_wall_side",
+	"textures": {
+		"wall": "block/polished_granite_wall",
+		"particle": "block/polished_granite"
+	}
+}

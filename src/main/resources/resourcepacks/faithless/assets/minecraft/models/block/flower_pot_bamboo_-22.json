@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:block/flower_pot_empty_-22",
+	"textures": {
+		"vines": "block/flower_pot_bamboo",
+		"soil": "block/podzol_top"
+	}
+}

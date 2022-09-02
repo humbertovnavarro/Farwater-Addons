@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/tripwire/tripwire",
+	"textures": {
+		"wire": "block/tripwire_cross_attached"
+	}
+}

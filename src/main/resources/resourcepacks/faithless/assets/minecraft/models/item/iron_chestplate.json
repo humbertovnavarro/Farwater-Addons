@@ -1,0 +1,7 @@
+{
+	"parent": "item/golden_chestplate",
+	"textures": {
+		"1": "item/iron_chestplate",
+		"lantern": "models/armor/iron_layer_1"
+	}
+}

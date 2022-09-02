@@ -1,0 +1,8 @@
+{
+	"parent": "item/anvil",
+	"ambientocclusion": false,
+	"textures": {
+		"4": "block/damaged_anvil_top",
+		"6": "item/damaged_anvil"
+	}
+}

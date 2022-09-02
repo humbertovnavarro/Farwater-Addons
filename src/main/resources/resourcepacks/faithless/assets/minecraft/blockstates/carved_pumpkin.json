@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=east": [
+	{ "model": "minecraft:block/carved_pumpkin", "y": 90, "weight": 1 },
+	{ "model": "minecraft:block/carved_pumpkin_2", "y": 90, "weight": 4 }
+	],
+    "facing=north": [
+	{ "model": "minecraft:block/carved_pumpkin", "weight": 1 },
+	{ "model": "minecraft:block/carved_pumpkin_2", "weight": 4 }
+	],
+    "facing=south": [
+	{ "model": "minecraft:block/carved_pumpkin", "y": 180, "weight": 1 },
+	{ "model": "minecraft:block/carved_pumpkin_2", "y": 180, "weight": 4 }
+	],
+    "facing=west": [
+	{ "model": "minecraft:block/carved_pumpkin", "y": 270, "weight": 1 },
+	{ "model": "minecraft:block/carved_pumpkin_2", "y": 270, "weight": 4 }
+	]
+  }
+}

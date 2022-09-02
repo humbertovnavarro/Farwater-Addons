@@ -1,0 +1,7 @@
+{
+	"parent": "item/golden_leggings",
+	"textures": {
+		"1": "optifine/cit/tools/amethyst/amethyst_leggings",
+		"lantern": "optifine/cit/tools/amethyst/amethyst_layer_2"
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/block",
+	"textures": {
+		"0": "block/bookshelf",
+		"particle": "block/bookshelf"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 8, 8], "texture": "#0", "cullface": "north"},
+				"east": {"uv": [8, 0, 16, 8], "texture": "#0", "cullface": "east"},
+				"south": {"uv": [0, 8, 8, 16], "texture": "#0", "cullface": "south"},
+				"west": {"uv": [8, 8, 16, 16], "texture": "#0", "cullface": "west"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "bookshelf",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [
+				{
+					"name": "bookshelf",
+					"origin": [8, 8, 8],
+					"color": 0,
+					"children": [0]
+				}
+			]
+		}
+	]
+}

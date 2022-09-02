@@ -1,0 +1,9 @@
+{
+	"parent": "block/sculk_zombie",
+	"ambientocclusion": false,
+	"textures": {
+		"2": "block/statue_zombie_bones",
+		"3": "block/candle_lit",
+		"particle": "block/glow_lichen"
+	}
+}

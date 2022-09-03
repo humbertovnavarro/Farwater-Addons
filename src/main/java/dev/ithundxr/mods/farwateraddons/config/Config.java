@@ -22,6 +22,10 @@ public class Config {
     public static ForgeConfigSpec.BooleanValue EmitParticles;
     public static ForgeConfigSpec.BooleanValue AllowCrossDimension;
 
+    public static ForgeConfigSpec.BooleanValue  LogsInstamine;
+    public static ForgeConfigSpec.BooleanValue  CobbleInstamine;
+    public static ForgeConfigSpec.BooleanValue  EndstoneInstamine;
+
     static {
         COMMON_BUILDER.push("server");
 
@@ -34,15 +38,22 @@ public class Config {
         RecallAmulet.MaxDuration = COMMON_BUILDER.comment("How long it should take to use the item").defineInRange("casttime", 100, 1, Integer.MAX_VALUE);
 
         COMMON_BUILDER.pop();
-
-        COMMON_CONFIG = COMMON_BUILDER.build();
-        CLIENT_CONFIG = CLIENT_BUILDER.build();
     }
 
     static {
         COMMON_BUILDER.comment("Spawn Rates").push("spawnrates");
 
         ModEntityGeneration.capybaraspawnrate = COMMON_BUILDER.comment("Spawnrate For Capybaras\nlower is less spawns higher is more spawns").defineInRange("capybaraspawnrate", 3, 1, Integer.MAX_VALUE);
+
+        COMMON_BUILDER.pop();
+    }
+
+    static {
+        COMMON_BUILDER.comment("Mining Configs").push("miningconfig");
+
+        LogsInstamine = COMMON_BUILDER.comment("Make Logs Instamineable").define("InstamineLogs", true);
+        CobbleInstamine = COMMON_BUILDER.comment("Make Cobble Instamineable").define("InstamineCobble", false);
+        EndstoneInstamine = COMMON_BUILDER.comment("Make Endstone Instamineable").define("InstamineEndstone", false);
 
         COMMON_BUILDER.pop();
 

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column_tilt",
-  "textures": {
-    "top": "minecraft:block/barrel_top",
-    "bottom": "minecraft:block/barrel_bottom",
-    "side": "minecraft:block/barrel_side"
-  }
-}

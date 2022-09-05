@@ -1,7 +1,0 @@
-{
-    "parent": "block/item_frame_floor",
-	"textures": {
-		"particle": "block/glow_item_frame",
-		"wood": "block/glow_item_frame"
-	}
-}

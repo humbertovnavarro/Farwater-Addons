@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/template_glass_inventory",
-	"textures": {
-		"glass": "block/green_stained_glass"
-	}
-}

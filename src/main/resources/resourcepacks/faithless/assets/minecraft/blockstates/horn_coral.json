@@ -1,8 +1,0 @@
-{
-    "variants": {
-        "": [
-            { "model": "block/horn_coral", "weight": 2 },
-			{ "model": "block/horn_coral_tall", "weight": 1 }
-        ]
-    }
-}

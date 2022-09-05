@@ -1,7 +1,0 @@
-{
-    "parent": "minecraft:block/crop_cross",
-	"textures": {
-		"particle": "block/nether_wart_stage3",
-		"crop": "block/nether_wart_stage3"
-	}
-}

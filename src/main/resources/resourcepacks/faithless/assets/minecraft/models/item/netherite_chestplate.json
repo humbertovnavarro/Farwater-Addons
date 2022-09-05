@@ -1,7 +1,0 @@
-{
-	"parent": "item/golden_chestplate",
-	"textures": {
-		"1": "item/netherite_chestplate",
-		"lantern": "models/armor/netherite_layer_1"
-	}
-}

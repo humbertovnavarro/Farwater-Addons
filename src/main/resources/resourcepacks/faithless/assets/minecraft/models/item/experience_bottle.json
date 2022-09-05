@@ -1,6 +1,0 @@
-{
-	"parent": "item/potion",
-	"textures": {
-		"1": "item/experience_bottle"
-	}
-}

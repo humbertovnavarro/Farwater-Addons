@@ -1,8 +1,0 @@
-{
-	"parent": "minecraft:block/flower_pot_cross_0",
-	"textures": {
-		"vines": "block/flower_pot_dead_bush",
-		"soil": "block/sand",
-		"plant": "block/dead_bush"
-	}
-}

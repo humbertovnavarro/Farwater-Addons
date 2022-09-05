@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/crop_cross_large",
-  "textures": {
-    "crop": "minecraft:block/wheat_stage7c"
-  }
-}

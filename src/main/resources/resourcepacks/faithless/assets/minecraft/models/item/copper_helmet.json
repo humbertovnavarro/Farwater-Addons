@@ -1,7 +1,0 @@
-{
-	"parent": "item/golden_helmet",
-	"textures": {
-		"1": "optifine/cit/tools/copper/copper_helmet",
-		"lantern": "optifine/cit/tools/copper/copper_layer_1"
-	}
-}

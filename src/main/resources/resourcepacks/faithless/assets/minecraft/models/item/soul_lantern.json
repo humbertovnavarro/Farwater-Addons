@@ -1,9 +1,0 @@
-{
-    "parent": "minecraft:item/lantern",
-	"ambientocclusion": false,
-	"textures": {
-		"1": "item/soul_lantern",
-		"particle": "block/soul_lantern",
-		"lantern": "block/soul_lantern"
-	}
-}

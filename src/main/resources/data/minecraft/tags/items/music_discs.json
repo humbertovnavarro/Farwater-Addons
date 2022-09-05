@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "farwateraddons:the_lost_soul_music_disc"
+    "farwateraddons:the_lost_soul_music_disc",
+    "farwateraddons:davey_jones_plays_his_organ_music_disc",
+    "farwateraddons:pstp_music_disc"
   ]
 }

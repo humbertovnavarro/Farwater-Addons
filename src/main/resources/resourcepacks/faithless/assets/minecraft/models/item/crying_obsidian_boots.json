@@ -1,7 +1,0 @@
-{
-	"parent": "item/golden_boots",
-	"textures": {
-		"1": "optifine/cit/tools/crying_obsidian/crying_obsidian_boots",
-		"lantern": "optifine/cit/tools/crying_obsidian/crying_obsidian_layer_1"
-	}
-}

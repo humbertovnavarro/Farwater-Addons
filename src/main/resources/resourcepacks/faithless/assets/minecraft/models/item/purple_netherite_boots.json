@@ -1,7 +1,0 @@
-{
-	"parent": "item/golden_boots",
-	"textures": {
-		"1": "optifine/cit/tools/purple_netherite/purple_netherite_boots",
-		"lantern": "optifine/cit/tools/purple_netherite/purple_netherite_layer_1"
-	}
-}

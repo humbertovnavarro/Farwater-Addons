@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:item/filled_map",
-  "textures": {
-		"1": "hypixel/filled_map_kill_contract",
-        "3": "hypixel/map_kill_contract"
-  }
-}

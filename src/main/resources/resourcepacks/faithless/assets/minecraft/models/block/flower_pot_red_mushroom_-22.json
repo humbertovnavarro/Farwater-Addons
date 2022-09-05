@@ -1,8 +1,0 @@
-{
-	"parent": "minecraft:block/flower_pot_cross_-22",
-	"textures": {
-		"vines": "block/flower_pot_red_mushroom",
-		"soil": "block/mycelium_top",
-		"plant": "block/red_mushroom"
-	}
-}

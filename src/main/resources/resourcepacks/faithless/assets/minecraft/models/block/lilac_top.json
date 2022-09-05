@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cross_tall_down",
-  "textures": {
-    "cross": "minecraft:block/lilac"
-  }
-}

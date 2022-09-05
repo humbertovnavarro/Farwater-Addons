@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "top": "minecraft:block/observer_top_vertical_on",
-    "bottom": "minecraft:block/observer_bottom_vertical_on",
-    "side": "minecraft:block/observer_side_vertical_on"
-  }
-}

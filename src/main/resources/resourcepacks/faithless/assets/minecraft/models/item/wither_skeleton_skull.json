@@ -1,8 +1,0 @@
-{
-	"parent": "item/skeleton_skull",
-	"textures": {
-		"1": "entity/skeleton/wither_skeleton",
-		"flowerpot": "item/wither_skeleton_skull",
-		"particle": "entity/skeleton/wither_skeleton"
-	}
-}

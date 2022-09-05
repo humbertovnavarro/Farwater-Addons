@@ -2,6 +2,7 @@ package dev.ithundxr.mods.farwateraddons;
 
 import dev.ithundxr.mods.farwateraddons.block.ModBlocks;
 import dev.ithundxr.mods.farwateraddons.config.Config;
+import dev.ithundxr.mods.farwateraddons.enchantment.ModEnchantments;
 import dev.ithundxr.mods.farwateraddons.entity.ModEntityTypes;
 import dev.ithundxr.mods.farwateraddons.fluid.ModFluids;
 import dev.ithundxr.mods.farwateraddons.item.ModItems;
@@ -40,6 +41,8 @@ public class FarwaterAddons {
         ModFluids.register(eventBus);
 
         ModEntityTypes.register(eventBus);
+
+        ModEnchantments.register(eventBus);
 
         eventBus.addListener(this::setup);
 

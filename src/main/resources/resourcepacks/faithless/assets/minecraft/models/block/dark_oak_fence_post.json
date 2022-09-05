@@ -1,8 +1,0 @@
-{
-    "parent": "minecraft:block/oak_fence_post",
-	"textures": {
-		"texture": "block/dark_oak_fence",
-		"log": "block/stripped_dark_oak_log_top",
-		"particle": "block/dark_oak_planks"
-	}
-}

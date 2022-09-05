@@ -1,7 +1,0 @@
-{
-	"parent": "item/golden_helmet",
-	"textures": {
-		"1": "item/diamond_helmet",
-		"lantern": "models/armor/diamond_layer_1"
-	}
-}

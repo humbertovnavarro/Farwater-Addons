@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column_tilt",
-  "textures": {
-    "top": "minecraft:block/oak_log_top",
-    "bottom": "minecraft:block/oak_log_top",
-    "side": "minecraft:block/oak_log"
-  }
-}

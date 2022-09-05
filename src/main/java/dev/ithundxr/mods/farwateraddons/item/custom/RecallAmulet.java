@@ -46,7 +46,6 @@ public class RecallAmulet extends Item {
     }
 
 
-
     @Override
     public @NotNull InteractionResultHolder<ItemStack> use(@NotNull Level worldIn, Player playerIn, @NotNull InteractionHand handIn) {
         ItemStack stack = playerIn.getItemInHand(handIn);
@@ -58,7 +57,7 @@ public class RecallAmulet extends Item {
 
     @Override
     public @NotNull ItemStack finishUsingItem(@NotNull ItemStack stack, Level worldIn, @NotNull LivingEntity entity) {
-        if(!worldIn.isClientSide) {
+        if (!worldIn.isClientSide) {
             ServerPlayer player = (ServerPlayer) entity;
             BlockPos bedLocation = player.getRespawnPosition();
 
@@ -67,7 +66,7 @@ public class RecallAmulet extends Item {
                 return stack;
             }
 
-            if(!Config.AllowCrossDimension.get() && player.level.dimension() != Level.OVERWORLD) {
+            if (!Config.AllowCrossDimension.get() && player.level.dimension() != Level.OVERWORLD) {
                 player.sendMessage(TextComponentHelper.createComponentTranslation(player, "chat.farwateraddons.recall.dimension"), player.getUUID());
 
                 return stack;
@@ -75,15 +74,15 @@ public class RecallAmulet extends Item {
 
             double distance = entity.distanceToSqr(bedLocation.getX(), bedLocation.getY(), bedLocation.getZ());
 
-            if(Config.PlaySounds.get() && distance > 24) {
+            if (Config.PlaySounds.get() && distance > 24) {
                 worldIn.playSound(null, player.blockPosition().getX(), player.blockPosition().getY(), player.blockPosition().getZ(), SoundEvents.LIGHTNING_BOLT_THUNDER, SoundSource.PLAYERS, 0.75F, 0.75F);
             }
 
             entity.stopRiding();
 
-            if(player.level.dimension() != player.getRespawnDimension()) {
+            if (player.level.dimension() != player.getRespawnDimension()) {
                 LogicalSidedProvider.WORKQUEUE.get(LogicalSide.SERVER);
-                ServerLevel transferWorld = ((ServerLevel)worldIn).getServer().getLevel(player.getRespawnDimension());
+                ServerLevel transferWorld = ((ServerLevel) worldIn).getServer().getLevel(player.getRespawnDimension());
 
                 assert transferWorld != null;
                 player.teleportTo(transferWorld, bedLocation.getX() + 0.5D, bedLocation.getY() + 0.6D, bedLocation.getZ() + 0.5D, player.getRotationVector().x, player.getRotationVector().y);
@@ -93,11 +92,11 @@ public class RecallAmulet extends Item {
 
             entity.fallDistance = 0;
 
-            stack.hurtAndBreak(1, player, (p)-> p.broadcastBreakEvent(p.getUsedItemHand()));
+            stack.hurtAndBreak(1, player, (p) -> p.broadcastBreakEvent(p.getUsedItemHand()));
 
             player.awardStat(Stats.ITEM_USED.get(this));
 
-            if(Config.PlaySounds.get())
+            if (Config.PlaySounds.get())
                 worldIn.playSound(null, player.blockPosition().getX(), player.blockPosition().getY(), player.blockPosition().getZ(), SoundEvents.LIGHTNING_BOLT_THUNDER, SoundSource.PLAYERS, 0.75F, 0.75F);
         }
 
@@ -107,7 +106,7 @@ public class RecallAmulet extends Item {
     @Override
     public void setDamage(ItemStack stack, int damage) {
         int maxDamage = stack.getMaxDamage();
-        if(damage >= maxDamage) {
+        if (damage >= maxDamage) {
             stack.shrink(1);
         }
 
@@ -120,8 +119,8 @@ public class RecallAmulet extends Item {
 
     @Override
     public void onUsingTick(ItemStack stack, LivingEntity entity, int count) {
-        if(!entity.level.isClientSide) {
-            if(Config.PlaySounds.get()) {
+        if (!entity.level.isClientSide) {
+            if (Config.PlaySounds.get()) {
                 if (entity.hurtTime > 0) {
                     entity.stopUsingItem();
                     entity.level.playSound(null, entity.position().x, entity.position().y, entity.position().z, SoundEvents.FIRE_EXTINGUISH, SoundSource.PLAYERS, 1, 1);
@@ -132,7 +131,7 @@ public class RecallAmulet extends Item {
                 }
             }
         } else {
-            if(Config.EmitParticles.get()) {
+            if (Config.EmitParticles.get()) {
                 Random rand = entity.level.random;
 
                 for (int i = 0; i < 60; i++) {

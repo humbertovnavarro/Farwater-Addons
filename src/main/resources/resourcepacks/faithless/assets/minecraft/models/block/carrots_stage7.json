@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/crop_cross_small",
-  "textures": {
-    "crop": "minecraft:block/carrots_stage7"
-  }
-}

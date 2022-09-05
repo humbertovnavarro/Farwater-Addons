@@ -22,9 +22,10 @@ public class Config {
     public static ForgeConfigSpec.BooleanValue EmitParticles;
     public static ForgeConfigSpec.BooleanValue AllowCrossDimension;
 
-    public static ForgeConfigSpec.BooleanValue  LogsInstamine;
-    public static ForgeConfigSpec.BooleanValue  CobbleInstamine;
-    public static ForgeConfigSpec.BooleanValue  EndstoneInstamine;
+    public static ForgeConfigSpec.BooleanValue DeepslateInstamine;
+    public static ForgeConfigSpec.BooleanValue LogsInstamine;
+    public static ForgeConfigSpec.BooleanValue CobbleInstamine;
+    public static ForgeConfigSpec.BooleanValue EndstoneInstamine;
 
     static {
         COMMON_BUILDER.push("server");
@@ -51,6 +52,7 @@ public class Config {
     static {
         COMMON_BUILDER.comment("Mining Configs").push("miningconfig");
 
+        DeepslateInstamine = COMMON_BUILDER.comment("Make Deepslate Instamineable").define("InstamineDeepslate", true);
         LogsInstamine = COMMON_BUILDER.comment("Make Logs Instamineable").define("InstamineLogs", true);
         CobbleInstamine = COMMON_BUILDER.comment("Make Cobble Instamineable").define("InstamineCobble", false);
         EndstoneInstamine = COMMON_BUILDER.comment("Make Endstone Instamineable").define("InstamineEndstone", false);

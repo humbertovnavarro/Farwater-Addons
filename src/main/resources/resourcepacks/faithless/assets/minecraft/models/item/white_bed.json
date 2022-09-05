@@ -1,7 +1,0 @@
-{
-	"parent": "item/red_bed",
-	"textures": {
-		"1": "entity/bed/white",
-		"4": "item/white_bed"
-	}
-}

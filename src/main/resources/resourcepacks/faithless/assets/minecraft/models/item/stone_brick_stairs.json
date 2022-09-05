@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/stairs_inventory",
-  "textures": {
-    "side": "minecraft:block/stone_bricks"
-  }
-}

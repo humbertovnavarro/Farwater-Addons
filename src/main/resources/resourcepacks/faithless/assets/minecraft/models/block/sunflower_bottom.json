@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/air",
-  "textures": {
-    "air": "minecraft:block/air",
-    "particle": "minecraft:block/sunflower_stem"
-  }
-}

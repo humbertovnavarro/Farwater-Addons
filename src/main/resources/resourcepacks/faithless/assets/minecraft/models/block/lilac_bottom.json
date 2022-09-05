@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/air",
-  "textures": {
-    "cross": "minecraft:block/air",
-    "particle": "minecraft:block/lilac"
-  }
-}

@@ -1,9 +1,0 @@
-{
-	"parent": "minecraft:item/torch",
-	"ambientocclusion": false,
-	"textures": {
-		"2": "block/soul_torch",
-		"layer0": "item/soul_torch",
-		"torch_flame_e": "block/soul_torch_flame"
-	}
-}

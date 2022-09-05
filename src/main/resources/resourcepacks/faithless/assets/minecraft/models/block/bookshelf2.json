@@ -1,9 +1,0 @@
-{
-	"parent": "minecraft:block/bookshelf",
-	"textures": {
-		"0": "block/bookshelf2",
-		"1": "block/bookshelf_top",
-		"2": "block/bookshelf_trim",
-		"particle": "block/bookshelf_top"
-	}
-}

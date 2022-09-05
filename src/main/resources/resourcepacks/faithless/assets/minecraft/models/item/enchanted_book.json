@@ -1,6 +1,0 @@
-{
-	"parent": "item/book",
-	"textures": {
-		"1": "item/enchanted_book"
-	}
-}

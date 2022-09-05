@@ -1,8 +1,0 @@
-{
-  "parent": "item/clock",
-  "textures": {
-    "minute": "item/clock/2",
-    "hour": "item/clock/4",
-    "info": "item/clock/info_hostile_spawn"
-  }
-}

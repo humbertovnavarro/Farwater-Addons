@@ -1,7 +1,0 @@
-{
-	"parent": "item/golden_chestplate",
-	"textures": {
-		"1": "optifine/cit/tools/copper/copper_chestplate",
-		"lantern": "optifine/cit/tools/copper/copper_layer_1"
-	}
-}

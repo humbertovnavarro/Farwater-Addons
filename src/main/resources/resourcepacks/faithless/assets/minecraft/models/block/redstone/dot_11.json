@@ -1,6 +1,0 @@
-{
-    "parent": "minecraft:block/redstone/redstone_dot",
-	"textures": {
-		"wire": "redstone/power_11"
-	}
-}

@@ -1,6 +1,0 @@
-{
-    "parent": "block/comparator",
-	"textures": {
-		"0": "block/repeater/comparator_on"
-	}
-}

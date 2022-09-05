@@ -2,7 +2,7 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "item": "minecraft:paper"
+      "item": "minecraft:stick"
     },
     {
       "item": "farwateraddons:cotton"

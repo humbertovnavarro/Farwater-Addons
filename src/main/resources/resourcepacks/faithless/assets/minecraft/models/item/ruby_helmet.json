@@ -1,7 +1,0 @@
-{
-	"parent": "item/golden_helmet",
-	"textures": {
-		"1": "optifine/cit/tools/ruby/ruby_helmet",
-		"lantern": "optifine/cit/tools/ruby/ruby_layer_1"
-	}
-}

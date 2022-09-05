@@ -1,7 +1,0 @@
-{   "parent": "block/honey_block",
-    "textures": {
-        "particle": "block/slime_block",
-        "down": "block/slime_block"
-    }
-}
-

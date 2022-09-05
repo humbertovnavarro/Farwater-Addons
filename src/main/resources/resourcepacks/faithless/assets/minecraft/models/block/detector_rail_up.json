@@ -1,7 +1,0 @@
-{
-	"parent": "minecraft:block/rail_up",
-	"textures": {
-		"0": "block/detector_rail_3d",
-		"particle": "block/detector_rail"
-	}
-}

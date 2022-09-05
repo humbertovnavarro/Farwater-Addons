@@ -1,8 +1,0 @@
-{
-	"parent": "item/acacia_door",
-	"textures": {
-		"0": "block/birch_door_bottom",
-		"1": "item/birch_door",
-		"2": "block/birch_door_top"
-	}
-}

@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/brick_wall_post",
-	"textures": {
-		"wall": "block/mud_brick_wall",
-		"particle": "block/mud_bricks"
-	}
-}

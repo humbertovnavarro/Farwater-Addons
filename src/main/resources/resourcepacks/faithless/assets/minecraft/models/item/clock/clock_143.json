@@ -1,7 +1,0 @@
-{
-  "parent": "item/clock",
-  "textures": {
-    "minute": "item/clock/15",
-    "hour": "item/clock/8"
-  }
-}

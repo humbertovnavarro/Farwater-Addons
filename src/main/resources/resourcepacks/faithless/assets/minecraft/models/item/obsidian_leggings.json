@@ -1,7 +1,0 @@
-{
-	"parent": "item/golden_leggings",
-	"textures": {
-		"1": "optifine/cit/tools/obsidian/obsidian_leggings",
-		"lantern": "optifine/cit/tools/obsidian/obsidian_layer_2"
-	}
-}

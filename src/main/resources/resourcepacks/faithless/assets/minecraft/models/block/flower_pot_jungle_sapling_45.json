@@ -1,7 +1,0 @@
-{
-	"parent": "minecraft:block/flower_pot_cross_45",
-	"textures": {
-		"vines": "block/flower_pot_jungle_sapling",
-		"plant": "block/jungle_sapling"
-	}
-}

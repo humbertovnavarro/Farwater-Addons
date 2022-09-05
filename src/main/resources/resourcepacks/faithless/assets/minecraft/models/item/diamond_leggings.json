@@ -1,7 +1,0 @@
-{
-	"parent": "item/golden_leggings",
-	"textures": {
-		"1": "item/diamond_leggings",
-		"lantern": "models/armor/diamond_layer_2"
-	}
-}

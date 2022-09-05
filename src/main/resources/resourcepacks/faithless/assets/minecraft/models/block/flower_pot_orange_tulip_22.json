@@ -1,7 +1,0 @@
-{
-	"parent": "minecraft:block/flower_pot_cross_22",
-	"textures": {
-		"vines": "block/flower_pot_orange_tulip",
-		"plant": "block/orange_tulip"
-	}
-}

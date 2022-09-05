@@ -1,7 +1,0 @@
-{
-	"parent": "item/golden_boots",
-	"textures": {
-		"1": "optifine/cit/tools/amethyst/amethyst_boots",
-		"lantern": "optifine/cit/tools/amethyst/amethyst_layer_1"
-	}
-}

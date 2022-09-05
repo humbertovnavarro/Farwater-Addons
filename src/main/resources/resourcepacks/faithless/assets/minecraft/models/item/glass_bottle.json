@@ -1,7 +1,0 @@
-{
-	"parent": "item/potion",
-	"ambientocclusion": false,
-	"textures": {
-		"1": "item/glass_bottle"
-	}
-}

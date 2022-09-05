@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:item/filled_map",
-  "textures": {
-		"1": "item/filled_map_nautilus",
-    "3": "minecraft:map/map_nautilus"
-  }
-}

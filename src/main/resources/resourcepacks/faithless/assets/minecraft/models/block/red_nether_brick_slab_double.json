@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "minecraft:block/red_nether_brick_slab_double",
-    "side": "minecraft:block/red_nether_brick_slab_double"
-  }
-}

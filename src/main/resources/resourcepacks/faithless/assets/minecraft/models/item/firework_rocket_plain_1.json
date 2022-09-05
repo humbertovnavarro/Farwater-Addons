@@ -1,6 +1,0 @@
-{
-	"parent": "item/firework_rocket",
-	"textures": {
-		"1": "item/firework_rocket_plain_1"
-	}
-}

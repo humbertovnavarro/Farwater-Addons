@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/brick_wall_side_alt",
-	"textures": {
-		"wall": "block/cobblestone_wall",
-		"particle": "block/cobblestone"
-	}
-}

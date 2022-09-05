@@ -1,6 +1,0 @@
-{
-    "parent": "minecraft:item/hypixel/gui",
-	"textures": {
-		"2": "hypixel/profile"
-	}
-}

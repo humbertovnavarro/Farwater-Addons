@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "minecraft:block/note_block/xylophone_1",
-    "side": "minecraft:block/note_block"
-  }
-}

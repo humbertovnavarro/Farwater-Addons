@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "clockworkhollowaddonsmolten_sugar_flowing",
+    "farwateraddons:molten_sugar_flowing",
     "farwateraddons:molten_sugar"
   ]
 }

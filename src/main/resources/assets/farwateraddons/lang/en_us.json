@@ -44,5 +44,7 @@
   "chat.farwateraddons.recall.dimension": "Can't teleport across dimensions",
   "chat.farwateraddons.recall.nobed": "Couldn't find bed",
 
+  "enchantment.farwateraddons.deepslate_miner": "Deepslate Miner",
+
   "itemGroup.farwateraddonstab": "Farwater Addons"
 }

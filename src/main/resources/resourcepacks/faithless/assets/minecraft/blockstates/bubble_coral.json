@@ -1,8 +1,0 @@
-{
-    "variants": {
-        "": [
-            { "model": "block/bubble_coral", "weight": 2 },
-			{ "model": "block/bubble_coral_tall", "weight": 1 }
-        ]
-    }
-}

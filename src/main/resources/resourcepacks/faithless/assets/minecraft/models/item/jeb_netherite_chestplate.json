@@ -1,7 +1,0 @@
-{
-	"parent": "item/golden_chestplate",
-	"textures": {
-		"1": "optifine/cit/tools/jeb_netherite/jeb_netherite_chestplate",
-		"lantern": "optifine/cit/tools/jeb_netherite/jeb_netherite_layer_1"
-	}
-}

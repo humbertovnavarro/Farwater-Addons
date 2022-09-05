@@ -1,7 +1,0 @@
-{
-	"parent": "item/golden_leggings",
-	"textures": {
-		"1": "optifine/cit/tools/prismarine/prismarine_leggings",
-		"lantern": "optifine/cit/tools/prismarine/prismarine_layer_2"
-	}
-}

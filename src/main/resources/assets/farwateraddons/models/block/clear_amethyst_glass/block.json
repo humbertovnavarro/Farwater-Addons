@@ -5,6 +5,8 @@
     "all": "farwateraddons:block/clear_amethyst_glass"
   },
   "connection": {
-    "textures": {"all": "cornerless_full"}
+    "textures": {
+      "all": "cornerless_full"
+    }
   }
 }

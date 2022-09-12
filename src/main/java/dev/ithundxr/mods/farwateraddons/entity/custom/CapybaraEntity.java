@@ -5,47 +5,46 @@ import dev.ithundxr.mods.farwateraddons.entity.ModEntityTypes;
 import dev.ithundxr.mods.farwateraddons.entity.client.capybara.CapybaraAnimalAttractionGoal;
 import dev.ithundxr.mods.farwateraddons.item.ModItems;
 import dev.ithundxr.mods.farwateraddons.sound.ModSounds;
+import net.minecraft.core.BlockPos;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.world.*;
+import net.minecraft.tags.FluidTags;
+import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.entity.AgeableMob;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.entity.projectile.AbstractArrow;
-import net.minecraft.world.level.ItemLike;
-import net.minecraft.world.level.block.LiquidBlock;
-import net.minecraft.world.level.pathfinder.BlockPathTypes;
-import net.minecraft.world.level.pathfinder.PathFinder;
-import net.minecraft.world.level.pathfinder.WalkNodeEvaluator;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
+import net.minecraft.world.entity.ai.navigation.GroundPathNavigation;
+import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.world.entity.ai.navigation.*;
-import net.minecraft.tags.FluidTags;
-import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.ServerLevelAccessor;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.LiquidBlock;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.pathfinder.BlockPathTypes;
+import net.minecraft.world.level.pathfinder.PathFinder;
+import net.minecraft.world.level.pathfinder.WalkNodeEvaluator;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.level.ServerLevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.scores.Team;
 import net.minecraftforge.event.ForgeEventFactory;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;
 import software.bernie.geckolib3.core.builder.AnimationBuilder;
@@ -54,28 +53,30 @@ import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
 import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
 
-
-import org.jetbrains.annotations.Nullable;
 import java.util.Set;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class CapybaraEntity extends TamableAnimal implements ItemSteerable, IAnimatable {
-    private final AnimationFactory factory = new AnimationFactory(this);
-
     private static final EntityDataAccessor<Integer> DATA_BOOST_TIME = SynchedEntityData.defineId(CapybaraEntity.class, EntityDataSerializers.INT);
-    private final ItemBasedSteering steering = new ItemBasedSteering(this.entityData, DATA_BOOST_TIME, null);
-
     private static final EntityDataAccessor<Boolean> SITTING =
             SynchedEntityData.defineId(CapybaraEntity.class, EntityDataSerializers.BOOLEAN);
     private static final Supplier<Set<ItemLike>> TEMPT_ITEMS = Suppliers.memoize(() -> {
         Stream<ItemLike> stream = Stream.of(Blocks.MELON, Items.APPLE, Items.SUGAR_CANE, Items.MELON_SLICE);
         return stream.map(ItemLike::asItem).collect(Collectors.toSet());
     });
+    private final AnimationFactory factory = new AnimationFactory(this);
+    private final ItemBasedSteering steering = new ItemBasedSteering(this.entityData, DATA_BOOST_TIME, null);
 
     public CapybaraEntity(EntityType<? extends CapybaraEntity> type, Level worldIn) {
         super(type, worldIn);
+    }
+
+    public static AttributeSupplier setAttributes() {
+        return TamableAnimal.createMobAttributes()
+                .add(Attributes.MAX_HEALTH, 14.0D)
+                .add(Attributes.MOVEMENT_SPEED, 0.2D).build();
     }
 
     @Override
@@ -92,12 +93,6 @@ public class CapybaraEntity extends TamableAnimal implements ItemSteerable, IAni
         this.goalSelector.addGoal(8, new LookAtPlayerGoal(this, Player.class, 6.0F));
         this.goalSelector.addGoal(9, new RandomLookAroundGoal(this));
         this.goalSelector.addGoal(10, new CapybaraAnimalAttractionGoal(this));
-    }
-
-    public static AttributeSupplier setAttributes() {
-        return TamableAnimal.createMobAttributes()
-                .add(Attributes.MAX_HEALTH, 14.0D)
-                .add(Attributes.MOVEMENT_SPEED, 0.2D).build();
     }
 
     @Override
@@ -147,8 +142,7 @@ public class CapybaraEntity extends TamableAnimal implements ItemSteerable, IAni
             if (stack.getItem() == Items.STICK) {
                 this.setSitting(!this.isSitting());
             }
-        }
-        else if (TEMPT_ITEMS.get().contains(stack.getItem()) && !isTame()) {
+        } else if (TEMPT_ITEMS.get().contains(stack.getItem()) && !isTame()) {
             if (this.random.nextInt(3) == 0 && !ForgeEventFactory.onAnimalTame(this, player)) {
                 this.tame(player);
                 this.navigation.stop();
@@ -158,13 +152,11 @@ public class CapybaraEntity extends TamableAnimal implements ItemSteerable, IAni
             }
             if (!player.getAbilities().instabuild) {
                 stack.shrink(1);
-            }
-            else {
+            } else {
                 this.level.broadcastEntityEvent(this, (byte) 6);
             }
             return InteractionResult.sidedSuccess(this.level.isClientSide);
-        }
-        else if (!this.isVehicle() && !player.isSecondaryUseActive() && !this.isBaby() && !isInSittingPose()) {
+        } else if (!this.isVehicle() && !player.isSecondaryUseActive() && !this.isBaby() && !isInSittingPose()) {
             boolean flag = this.isFood(player.getItemInHand(hand));
             if (!flag && !this.isVehicle() && !player.isSecondaryUseActive()) {
                 if (!this.level.isClientSide) {
@@ -173,8 +165,7 @@ public class CapybaraEntity extends TamableAnimal implements ItemSteerable, IAni
 
                 return InteractionResult.sidedSuccess(this.level.isClientSide);
             }
-        }
-        else if (!this.getPassengers().isEmpty()) {
+        } else if (!this.getPassengers().isEmpty()) {
             ejectPassengers();
         }
         return super.mobInteract(player, hand);
@@ -198,13 +189,13 @@ public class CapybaraEntity extends TamableAnimal implements ItemSteerable, IAni
         this.entityData.define(SITTING, false);
     }
 
+    public boolean isSitting() {
+        return this.entityData.get(SITTING);
+    }
+
     public void setSitting(boolean sitting) {
         this.entityData.set(SITTING, sitting);
         this.setOrderedToSit(sitting);
-    }
-
-    public boolean isSitting() {
-        return this.entityData.get(SITTING);
     }
 
     @Override
@@ -318,7 +309,7 @@ public class CapybaraEntity extends TamableAnimal implements ItemSteerable, IAni
     }
 
     public float getSteeringSpeed() {
-        return (float)this.getAttributeValue(Attributes.MOVEMENT_SPEED) * 0.225F;
+        return (float) this.getAttributeValue(Attributes.MOVEMENT_SPEED) * 0.225F;
     }
 
     public void travelWithInput(Vec3 pTravelVec) {

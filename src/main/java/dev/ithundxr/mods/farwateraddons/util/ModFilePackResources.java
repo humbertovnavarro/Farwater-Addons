@@ -1,9 +1,9 @@
 package dev.ithundxr.mods.farwateraddons.util;
 
-import java.nio.file.Path;
-
 import net.minecraftforge.forgespi.locating.IModFile;
 import net.minecraftforge.resource.PathResourcePack;
+
+import java.nio.file.Path;
 
 public class ModFilePackResources extends PathResourcePack {
     protected final IModFile modFile;

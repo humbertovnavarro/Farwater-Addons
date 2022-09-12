@@ -1,0 +1,14 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "farwateraddons:molten_sugar",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:sugar"
+    }
+  ]
+}

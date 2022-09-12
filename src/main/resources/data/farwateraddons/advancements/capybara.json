@@ -1,0 +1,29 @@
+{
+  "parent": "farwateraddons:root",
+  "display": {
+    "icon": {
+      "item": "farwateraddons:capybara_spawn_egg"
+    },
+    "title": "Ok I Pull Up",
+    "description": "ok i pull up + baby capybara + ratio + bozo",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "bred": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "parent": {
+          "type": "farwateraddons:capybara"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "bred"
+    ]
+  ]
+}

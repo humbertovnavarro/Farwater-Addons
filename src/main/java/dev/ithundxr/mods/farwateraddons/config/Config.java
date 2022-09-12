@@ -23,7 +23,6 @@ public class Config {
     public static ForgeConfigSpec.BooleanValue AllowCrossDimension;
 
     public static ForgeConfigSpec.BooleanValue DeepslateInstamine;
-    public static ForgeConfigSpec.BooleanValue LogsInstamine;
     public static ForgeConfigSpec.BooleanValue CobbleInstamine;
     public static ForgeConfigSpec.BooleanValue EndstoneInstamine;
 
@@ -36,7 +35,7 @@ public class Config {
         EmitParticles = COMMON_BUILDER.comment("Emit particles when using item").define("particlesEnabled", true);
         AllowCrossDimension = COMMON_BUILDER.comment("Allow to teleport across dimensions").define("allowCrossDimension", true);
         RecallAmulet.MaxDamage = COMMON_BUILDER.comment("Set max durability of item").defineInRange("durability", 50, 1, Integer.MAX_VALUE);
-        RecallAmulet.MaxDuration = COMMON_BUILDER.comment("How long it should take to use the item").defineInRange("casttime", 100, 1, Integer.MAX_VALUE);
+        RecallAmulet.MaxDuration = COMMON_BUILDER.comment("How long it should take to use the item").defineInRange("casttime", 200, 1, Integer.MAX_VALUE);
 
         COMMON_BUILDER.pop();
     }
@@ -53,9 +52,8 @@ public class Config {
         COMMON_BUILDER.comment("Mining Configs").push("miningconfig");
 
         DeepslateInstamine = COMMON_BUILDER.comment("Make Deepslate Instamineable").define("InstamineDeepslate", true);
-        LogsInstamine = COMMON_BUILDER.comment("Make Logs Instamineable").define("InstamineLogs", true);
-        CobbleInstamine = COMMON_BUILDER.comment("Make Cobble Instamineable").define("InstamineCobble", false);
-        EndstoneInstamine = COMMON_BUILDER.comment("Make Endstone Instamineable").define("InstamineEndstone", false);
+        CobbleInstamine = COMMON_BUILDER.comment("Make Cobble Instamineable").define("InstamineCobble", true);
+        EndstoneInstamine = COMMON_BUILDER.comment("Make Endstone Instamineable").define("InstamineEndstone", true);
 
         COMMON_BUILDER.pop();
 

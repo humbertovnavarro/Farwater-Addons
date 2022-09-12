@@ -42,6 +42,10 @@ public class HyperRaccoonTokenBoss extends Animal implements IAnimatable {
                 .add(Attributes.ARMOR, 4f).build();
     }
 
+    public static boolean canSpawn(EntityType<HyperRaccoonTokenBoss> entityType, LevelAccessor levelAccessor, MobSpawnType spawnType, BlockPos pos, Random random) {
+        return checkAnimalSpawnRules(entityType, levelAccessor, spawnType, pos, random) && pos.getY() > 70;
+    }
+
     protected void registerGoals() {
         this.goalSelector.addGoal(8, new LookAtPlayerGoal(this, Player.class, 8.0F));
         this.goalSelector.addGoal(4, new MoveTowardsTargetGoal(this, 0.9D, 32.0F));
@@ -63,11 +67,6 @@ public class HyperRaccoonTokenBoss extends Animal implements IAnimatable {
         }
         event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.TokenBoss.idle", true));
         return PlayState.CONTINUE;
-    }
-
-    public static boolean canSpawn(EntityType<HyperRaccoonTokenBoss> entityType, LevelAccessor levelAccessor, MobSpawnType spawnType, BlockPos pos, Random random)
-    {
-        return checkAnimalSpawnRules(entityType, levelAccessor, spawnType, pos, random) && pos.getY() > 70;
     }
 
     @Override

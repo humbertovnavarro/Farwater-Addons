@@ -1,51 +1,29 @@
-modLoader="javafml"
-loaderVersion="${loader_range}"
-license="MIT"
-issueTrackerURL="https://github.com/IThundxr/Farwater-Addons/issues"
+modLoader = "javafml"
+loaderVersion = "${loader_range}"
+license = "MIT"
+issueTrackerURL = "https://github.com/IThundxr/Farwater-Addons/issues"
 
 [[mods]]
-modId="farwateraddons"
-version="${version}"
-displayName="Farwater Addons"
-displayURL="https://github.com/IThundxr/Farwater-Addons"
-authors="IThundxr" #optional
-description='''
+modId = "farwateraddons"
+version = "${version}"
+displayName = "Farwater Addons"
+displayURL = "https://github.com/IThundxr/Farwater-Addons"
+authors = "IThundxr" #optional
+description = '''
 Custom mod for the Farwater Server to add a bunch of custom features to the server
 discord https://discord.gg/jXhn4zktzz
 '''
 
 [[dependencies.farwateraddons]]
-modId="forge"
-mandatory=true
-versionRange="${forge_range}"
-ordering="NONE"
-side="BOTH"
+modId = "forge"
+mandatory = true
+versionRange = "${forge_range}"
+ordering = "NONE"
+side = "BOTH"
 
 [[dependencies.farwateraddons]]
-modId="minecraft"
-mandatory=true
-versionRange="${minecraft_range}"
-ordering="NONE"
-side="BOTH"
-
-[[dependencies.farwateraddons]]
-modId="mantle"
-mandatory=true
-versionRange="${mantle_range}"
-ordering="NONE"
-side="BOTH"
-
-[[dependencies.farwateraddons]]
-modId="tconstruct"
-mandatory=true
-versionRange="${tconstruct_range}"
-ordering="NONE"
-side="BOTH"
-
-
-[[dependencies.farwateraddons]]
-modId="jei"
-mandatory=false
-versionRange="${jei_range}"
-ordering="NONE"
-side="BOTH"
+modId = "minecraft"
+mandatory = true
+versionRange = "${minecraft_range}"
+ordering = "NONE"
+side = "BOTH"

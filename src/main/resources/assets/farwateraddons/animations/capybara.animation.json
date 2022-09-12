@@ -1,114 +1,202 @@
 {
-	"format_version": "1.8.0",
-	"animations": {
-		"animation.capybara.sitting": {
-			"loop": true,
-			"bones": {
-				"body": {
-					"position": {
-						"vector": [0, -6, 0]
-					}
-				},
-				"rightBackLeg": {
-					"rotation": {
-						"vector": [90, -22.5, 0]
-					},
-					"position": {
-						"vector": [0, -8, 0]
-					}
-				},
-				"leftBackLeg": {
-					"rotation": {
-						"vector": [90, 22.5, 0]
-					},
-					"position": {
-						"vector": [0, -8, 0]
-					}
-				},
-				"rightFrontLeg": {
-					"rotation": {
-						"vector": [-90, 20, 0]
-					},
-					"position": {
-						"vector": [0, -9, 0]
-					}
-				},
-				"leftFrontLeg": {
-					"rotation": {
-						"vector": [-90, -20, 0]
-					},
-					"position": {
-						"vector": [0, -9, 0]
-					}
-				},
-				"head": {
-					"position": {
-						"vector": [0, -6, 0]
-					}
-				}
-			}
-		},
-		"animation.capybara.idle": {
-			"loop": true
-		},
-		"animation.capybara.walk": {
-			"loop": true,
-			"animation_length": 1.5,
-			"bones": {
-				"rightBackLeg": {
-					"rotation": {
-						"0.0": {
-							"vector": [15, 0, 0]
-						},
-						"0.75": {
-							"vector": [-15, 0, 0]
-						},
-						"1.5": {
-							"vector": [15, 0, 0]
-						}
-					}
-				},
-				"leftBackLeg": {
-					"rotation": {
-						"0.0": {
-							"vector": [-15, 0, 0]
-						},
-						"0.75": {
-							"vector": [15, 0, 0]
-						},
-						"1.5": {
-							"vector": [-15, 0, 0]
-						}
-					}
-				},
-				"rightFrontLeg": {
-					"rotation": {
-						"0.0": {
-							"vector": [-15, 0, 0]
-						},
-						"0.75": {
-							"vector": [15, 0, 0]
-						},
-						"1.5": {
-							"vector": [-15, 0, 0]
-						}
-					}
-				},
-				"leftFrontLeg": {
-					"rotation": {
-						"0.0": {
-							"vector": [15, 0, 0]
-						},
-						"0.75": {
-							"vector": [-15, 0, 0]
-						},
-						"1.5": {
-							"vector": [15, 0, 0]
-						}
-					}
-				}
-			}
-		}
-	},
-	"geckolib_format_version": 2
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.capybara.sitting": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": {
+            "vector": [
+              0,
+              -6,
+              0
+            ]
+          }
+        },
+        "rightBackLeg": {
+          "rotation": {
+            "vector": [
+              90,
+              -22.5,
+              0
+            ]
+          },
+          "position": {
+            "vector": [
+              0,
+              -8,
+              0
+            ]
+          }
+        },
+        "leftBackLeg": {
+          "rotation": {
+            "vector": [
+              90,
+              22.5,
+              0
+            ]
+          },
+          "position": {
+            "vector": [
+              0,
+              -8,
+              0
+            ]
+          }
+        },
+        "rightFrontLeg": {
+          "rotation": {
+            "vector": [
+              -90,
+              20,
+              0
+            ]
+          },
+          "position": {
+            "vector": [
+              0,
+              -9,
+              0
+            ]
+          }
+        },
+        "leftFrontLeg": {
+          "rotation": {
+            "vector": [
+              -90,
+              -20,
+              0
+            ]
+          },
+          "position": {
+            "vector": [
+              0,
+              -9,
+              0
+            ]
+          }
+        },
+        "head": {
+          "position": {
+            "vector": [
+              0,
+              -6,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation.capybara.idle": {
+      "loop": true
+    },
+    "animation.capybara.walk": {
+      "loop": true,
+      "animation_length": 1.5,
+      "bones": {
+        "rightBackLeg": {
+          "rotation": {
+            "0.0": {
+              "vector": [
+                15,
+                0,
+                0
+              ]
+            },
+            "0.75": {
+              "vector": [
+                -15,
+                0,
+                0
+              ]
+            },
+            "1.5": {
+              "vector": [
+                15,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        "leftBackLeg": {
+          "rotation": {
+            "0.0": {
+              "vector": [
+                -15,
+                0,
+                0
+              ]
+            },
+            "0.75": {
+              "vector": [
+                15,
+                0,
+                0
+              ]
+            },
+            "1.5": {
+              "vector": [
+                -15,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        "rightFrontLeg": {
+          "rotation": {
+            "0.0": {
+              "vector": [
+                -15,
+                0,
+                0
+              ]
+            },
+            "0.75": {
+              "vector": [
+                15,
+                0,
+                0
+              ]
+            },
+            "1.5": {
+              "vector": [
+                -15,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        "leftFrontLeg": {
+          "rotation": {
+            "0.0": {
+              "vector": [
+                15,
+                0,
+                0
+              ]
+            },
+            "0.75": {
+              "vector": [
+                -15,
+                0,
+                0
+              ]
+            },
+            "1.5": {
+              "vector": [
+                15,
+                0,
+                0
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "geckolib_format_version": 2
 }

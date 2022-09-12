@@ -1,9 +1,9 @@
 {
-    "type": "minecraft:smoking",
-    "ingredient": {
-        "item": "farwateraddons:chicken_nugget_raw"
-    },
-    "result": "farwateraddons:chicken_nugget",
-    "experience": 0.15,
-    "cookingtime": 100
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "farwateraddons:chicken_nugget_raw"
+  },
+  "result": "farwateraddons:chicken_nugget",
+  "experience": 0.15,
+  "cookingtime": 100
 }

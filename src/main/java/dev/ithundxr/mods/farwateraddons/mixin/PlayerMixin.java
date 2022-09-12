@@ -1,8 +1,8 @@
 package dev.ithundxr.mods.farwateraddons.mixin;
 
+import dev.ithundxr.mods.farwateraddons.config.Config;
 import dev.ithundxr.mods.farwateraddons.enchantment.ModEnchantments;
 import net.minecraft.core.BlockPos;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.player.Player;
@@ -14,8 +14,6 @@ import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
-import dev.ithundxr.mods.farwateraddons.config.Config;
-
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -30,23 +28,21 @@ public class PlayerMixin {
             Player thiz = (Player) (Object) this;
             ItemStack itemStack = thiz.getMainHandItem();
             Item item = itemStack.getItem();
-            int j = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BLOCK_EFFICIENCY, itemStack);
+            int efficiency = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BLOCK_EFFICIENCY, itemStack);
 
-            //Checks if j (eff) is 5 or more and if user has haste
-            if (j >= 5 && thiz.hasEffect(MobEffects.DIG_SPEED)) {
+            if (efficiency >= 5 && thiz.hasEffect(MobEffects.DIG_SPEED)) {
                 float speed = ((TieredItem) item).getTier().getSpeed();
                 MobEffectInstance eff = thiz.getEffect(MobEffects.DIG_SPEED);
                 if (eff != null && eff.getAmplifier() >= 1) {
-                    if (Config.LogsInstamine.get() && Items.NETHERITE_AXE.equals(item)) {
-                        if (blockState.is(BlockTags.LOGS)) {
-                            speed *= 10f;
-                            cir.setReturnValue(speed);
-                        }
-                    } else if (Items.NETHERITE_PICKAXE.equals(item)) {
-                        int p = EnchantmentHelper.getItemEnchantmentLevel(ModEnchantments.DEEPSLATE_MINER.get(), itemStack);
-                        if (Config.DeepslateInstamine.get() && p >= 1 && blockState.getBlock().equals(Blocks.DEEPSLATE) ||
-                                (Config.CobbleInstamine.get() && blockState.getBlock().equals(Blocks.COBBLESTONE)) ||
-                                (Config.EndstoneInstamine.get() && blockState.getBlock().equals(Blocks.END_STONE))
+                    if (Items.NETHERITE_PICKAXE.equals(item)) {
+
+                        int dm = EnchantmentHelper.getItemEnchantmentLevel(ModEnchantments.DEEPSLATE_MINER.get(), itemStack);
+                        int cm = EnchantmentHelper.getItemEnchantmentLevel(ModEnchantments.COBBLESTONE_MINER.get(), itemStack);
+                        int em = EnchantmentHelper.getItemEnchantmentLevel(ModEnchantments.ENDSTONE_MINER.get(), itemStack);
+
+                        if (Config.DeepslateInstamine.get() && dm >= 1 && blockState.getBlock().equals(Blocks.DEEPSLATE) ||
+                                (Config.CobbleInstamine.get() && cm >= 1 && blockState.getBlock().equals(Blocks.COBBLESTONE)) ||
+                                (Config.EndstoneInstamine.get() && em >= 1 && blockState.getBlock().equals(Blocks.END_STONE))
                         ) {
                             speed *= 10f;
                             cir.setReturnValue(speed);

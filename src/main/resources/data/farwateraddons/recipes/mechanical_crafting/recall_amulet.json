@@ -1,28 +1,25 @@
 {
   "type": "create:mechanical_crafting",
   "pattern": [
-    "NAD",
-    "GSG",
-    "DEN"
+    "GAG",
+    "CEC",
+    "GDG"
   ],
   "key": {
-    "N": {
-      "item": "minecraft:netherite_ingot"
+    "D": {
+      "item": "ae2:ender_dust"
     },
     "A": {
       "item": "createaddition:gold_spool"
     },
-    "D": {
-      "item": "minecraft:diamond"
-    },
-    "S": {
-      "item": "minecraft:nether_star"
+    "C": {
+      "item": "ae2:fluix_crystal"
     },
     "E": {
       "item": "minecraft:ender_eye"
     },
     "G": {
-      "item": "minecraft:gold_block"
+      "item": "minecraft:gold_ingot"
     }
   },
   "result": {

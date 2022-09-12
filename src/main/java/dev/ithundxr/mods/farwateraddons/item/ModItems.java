@@ -6,7 +6,6 @@ import dev.ithundxr.mods.farwateraddons.entity.ModEntityTypes;
 import dev.ithundxr.mods.farwateraddons.fluid.ModFluids;
 import dev.ithundxr.mods.farwateraddons.item.custom.RecallAmulet;
 import dev.ithundxr.mods.farwateraddons.sound.ModSounds;
-import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -57,7 +56,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.FARWATERADDONS_TAB)));
 
     public static final RegistryObject<Item> CAPYBARA_SPAWN_EGG = ITEMS.register("capybara_spawn_egg",
-            () -> new ForgeSpawnEggItem(ModEntityTypes.CAPYBARA,0x9e5d39, 0x412f24,
+            () -> new ForgeSpawnEggItem(ModEntityTypes.CAPYBARA, 0x9e5d39, 0x412f24,
                     new Item.Properties().tab(ModCreativeModeTab.FARWATERADDONS_TAB)));
 
     public static final RegistryObject<Item> ORANGE_ON_A_STICK = ITEMS.register("orange_on_a_stick",

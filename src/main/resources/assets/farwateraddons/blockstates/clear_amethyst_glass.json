@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "farwateraddons:block/clear_amethyst_glass/block" }
+    "": {
+      "model": "farwateraddons:block/clear_amethyst_glass/block"
+    }
   }
 }

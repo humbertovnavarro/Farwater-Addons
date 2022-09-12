@@ -1,71 +1,119 @@
 {
-	"format_version": "1.8.0",
-	"animations": {
-		"animation.TokenBoss.walk": {
-			"loop": true,
-			"animation_length": 1.5,
-			"bones": {
-				"rightleg": {
-					"rotation": {
-						"0.0": {
-							"vector": [-12.5, 0, 0]
-						},
-						"0.75": {
-							"vector": [22.5, 0, 0]
-						},
-						"1.5": {
-							"vector": [-22.5, 0, 0],
-							"easing": "linear"
-						}
-					}
-				},
-				"leftarm": {
-					"rotation": {
-						"0.0": {
-							"vector": [20, 0, 0]
-						},
-						"0.75": {
-							"vector": [-25, 0, 0]
-						},
-						"1.5": {
-							"vector": [25, 0, 0],
-							"easing": "linear"
-						}
-					}
-				},
-				"leftleg": {
-					"rotation": {
-						"0.0": {
-							"vector": [12.5, 0, 0]
-						},
-						"0.75": {
-							"vector": [-22.5, 0, 0]
-						},
-						"1.5": {
-							"vector": [22.5, 0, 0],
-							"easing": "linear"
-						}
-					}
-				},
-				"rightarm": {
-					"rotation": {
-						"0.0": {
-							"vector": [-20, 0, 0]
-						},
-						"0.75": {
-							"vector": [25, 0, 0]
-						},
-						"1.5": {
-							"vector": [-25, 0, 0],
-							"easing": "linear"
-						}
-					}
-				}
-			}
-		},
-		"animation.TokenBoss.idle": {
-			"loop": true
-		}
-	},
-	"geckolib_format_version": 2
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.TokenBoss.walk": {
+      "loop": true,
+      "animation_length": 1.5,
+      "bones": {
+        "rightleg": {
+          "rotation": {
+            "0.0": {
+              "vector": [
+                -12.5,
+                0,
+                0
+              ]
+            },
+            "0.75": {
+              "vector": [
+                22.5,
+                0,
+                0
+              ]
+            },
+            "1.5": {
+              "vector": [
+                -22.5,
+                0,
+                0
+              ],
+              "easing": "linear"
+            }
+          }
+        },
+        "leftarm": {
+          "rotation": {
+            "0.0": {
+              "vector": [
+                20,
+                0,
+                0
+              ]
+            },
+            "0.75": {
+              "vector": [
+                -25,
+                0,
+                0
+              ]
+            },
+            "1.5": {
+              "vector": [
+                25,
+                0,
+                0
+              ],
+              "easing": "linear"
+            }
+          }
+        },
+        "leftleg": {
+          "rotation": {
+            "0.0": {
+              "vector": [
+                12.5,
+                0,
+                0
+              ]
+            },
+            "0.75": {
+              "vector": [
+                -22.5,
+                0,
+                0
+              ]
+            },
+            "1.5": {
+              "vector": [
+                22.5,
+                0,
+                0
+              ],
+              "easing": "linear"
+            }
+          }
+        },
+        "rightarm": {
+          "rotation": {
+            "0.0": {
+              "vector": [
+                -20,
+                0,
+                0
+              ]
+            },
+            "0.75": {
+              "vector": [
+                25,
+                0,
+                0
+              ]
+            },
+            "1.5": {
+              "vector": [
+                -25,
+                0,
+                0
+              ],
+              "easing": "linear"
+            }
+          }
+        }
+      }
+    },
+    "animation.TokenBoss.idle": {
+      "loop": true
+    }
+  },
+  "geckolib_format_version": 2
 }

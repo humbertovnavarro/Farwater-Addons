@@ -1,12 +1,28 @@
 {
   "variants": {
-    "age=0": { "model": "farwateraddons:block/cotton_stage0" },
-    "age=1": { "model": "farwateraddons:block/cotton_stage1" },
-    "age=2": { "model": "farwateraddons:block/cotton_stage1" },
-    "age=3": { "model": "farwateraddons:block/cotton_stage1" },
-    "age=4": { "model": "farwateraddons:block/cotton_stage1" },
-    "age=5": { "model": "farwateraddons:block/cotton_stage1" },
-    "age=6": { "model": "farwateraddons:block/cotton_stage1" },
-    "age=7": { "model": "farwateraddons:block/cotton_stage3" }
+    "age=0": {
+      "model": "farwateraddons:block/cotton_stage0"
+    },
+    "age=1": {
+      "model": "farwateraddons:block/cotton_stage1"
+    },
+    "age=2": {
+      "model": "farwateraddons:block/cotton_stage1"
+    },
+    "age=3": {
+      "model": "farwateraddons:block/cotton_stage1"
+    },
+    "age=4": {
+      "model": "farwateraddons:block/cotton_stage1"
+    },
+    "age=5": {
+      "model": "farwateraddons:block/cotton_stage1"
+    },
+    "age=6": {
+      "model": "farwateraddons:block/cotton_stage1"
+    },
+    "age=7": {
+      "model": "farwateraddons:block/cotton_stage3"
+    }
   }
 }

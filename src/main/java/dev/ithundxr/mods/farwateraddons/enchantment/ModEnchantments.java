@@ -17,6 +17,14 @@ public class ModEnchantments {
             ENCHANTMENTS.register("deepslate_miner",
                     () -> new DeepslateMinerEnchant(Enchantment.Rarity.VERY_RARE, EquipmentSlot.MAINHAND));
 
+    public static RegistryObject<Enchantment> ENDSTONE_MINER =
+            ENCHANTMENTS.register("endstone_miner",
+                    () -> new EndstoneMinerEnchant(Enchantment.Rarity.VERY_RARE, EquipmentSlot.MAINHAND));
+
+    public static RegistryObject<Enchantment> COBBLESTONE_MINER =
+            ENCHANTMENTS.register("cobblestone_miner",
+                    () -> new CobblestoneMinerEnchant(Enchantment.Rarity.VERY_RARE, EquipmentSlot.MAINHAND));
+
 
     public static void register(IEventBus eventBus) {
         ENCHANTMENTS.register(eventBus);

@@ -54,13 +54,12 @@ public class FarwaterAddons {
         Config.loadConfig(Config.CLIENT_CONFIG, FMLPaths.CONFIGDIR.get().resolve("farwateraddons-client.toml"));
         Config.loadConfig(Config.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve("farwateraddons-common.toml"));
 
-        // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void setup(final FMLCommonSetupEvent event) {
-        event.enqueueWork(() -> {
-/*            SpawnPlacements.register(ModEntityTypes.ITHUNDXRTOKENBOSS.get(),
+        event.enqueueWork(() -> {/*
+                    SpawnPlacements.register(ModEntityTypes.ITHUNDXRTOKENBOSS.get(),
                     SpawnPlacements.Type.ON_GROUND,
                     Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
                     IThundxrTokenBoss::canSpawn);
@@ -73,8 +72,7 @@ public class FarwaterAddons {
             SpawnPlacements.register(ModEntityTypes.HYPERRACCOONTOKENBOSS.get(),
                     SpawnPlacements.Type.ON_GROUND,
                     Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                    HyperRaccoonTokenBoss::canSpawn);
-*/
+                    HyperRaccoonTokenBoss::canSpawn);*/
 
             SpawnPlacements.register(ModEntityTypes.CAPYBARA.get(),
                     SpawnPlacements.Type.ON_GROUND,

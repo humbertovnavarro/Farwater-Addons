@@ -26,15 +26,15 @@
   "subtitle.farwateraddons.the_lost_soul": "RedWolf - The Lost Soul Music Disc Plays",
 
   "item.farwateraddons.davey_jones_plays_his_organ_music_disc": "Music Disc",
-  "item.farwateraddons.davey_jones_plays_his_organ_music_disc.desc": "TyrDrop - The Davey Jones Plays His Organ",
-  "subtitle.farwateraddons.davey_jones_plays_his_organ": "TyrDrop - The Davey Jones Plays His Organ",
+  "item.farwateraddons.davey_jones_plays_his_organ_music_disc.desc": "TyrDrop - Davey Jones Plays His Organ",
+  "subtitle.farwateraddons.davey_jones_plays_his_organ": "TyrDrop - Davey Jones Plays His Organ Music Disc Plays",
 
   "item.farwateraddons.pstp_music_disc": "Music Disc",
   "item.farwateraddons.pstp_music_disc.desc": "TyrDrop - Pigstep Remix",
   "subtitle.farwateraddons.pstp": "TyrDrop - Pigstep Remix Music Disc Plays",
 
   "item.farwateraddons.capybara_spawn_egg": "Capybara Spawn Egg",
-  "item.farwateradons.orange_on_a_stick": "Orange On A Stick",
+  "item.farwateraddons.orange_on_a_stick": "Orange On A Stick",
   "entity.farwateraddons.capybara": "Capybara",
   "subtitle.farwateraddons.capybara.ambient": "Capybara whines",
   "subtitle.farwateraddons.capybara.hurt": "Capybara hurts",
@@ -45,6 +45,11 @@
   "chat.farwateraddons.recall.nobed": "Couldn't find bed",
 
   "enchantment.farwateraddons.deepslate_miner": "Deepslate Miner",
+  "enchantment.farwateraddons.deepslate_miner.desc": "Lets you instamine Deepslate",
+  "enchantment.farwateraddons.endstone_miner": "Endstone Miner",
+  "enchantment.farwateraddons.endstone_miner.desc": "Lets you instamine Endstone",
+  "enchantment.farwateraddons.cobblestone_miner": "Cobblestone Miner",
+  "enchantment.farwateraddons.cobblestone_miner.desc": "Lets you instamine Cobblestone",
 
   "itemGroup.farwateraddonstab": "Farwater Addons"
 }

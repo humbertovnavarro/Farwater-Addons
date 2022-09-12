@@ -35,6 +35,10 @@ public class RecallAmulet extends Item {
         );
     }
 
+    public static float clamp(float val, float min, float max) {
+        return Math.max(min, Math.min(max, val));
+    }
+
     @Override
     public boolean isValidRepairItem(@NotNull ItemStack toRepair, ItemStack repair) {
         return repair.getItem() == Items.DIAMOND || super.isValidRepairItem(toRepair, repair);
@@ -45,7 +49,6 @@ public class RecallAmulet extends Item {
         return 10;
     }
 
-
     @Override
     public @NotNull InteractionResultHolder<ItemStack> use(@NotNull Level worldIn, Player playerIn, @NotNull InteractionHand handIn) {
         ItemStack stack = playerIn.getItemInHand(handIn);
@@ -53,7 +56,6 @@ public class RecallAmulet extends Item {
         playerIn.startUsingItem(handIn);
         return InteractionResultHolder.consume(stack);
     }
-
 
     @Override
     public @NotNull ItemStack finishUsingItem(@NotNull ItemStack stack, Level worldIn, @NotNull LivingEntity entity) {
@@ -111,10 +113,6 @@ public class RecallAmulet extends Item {
         }
 
         super.setDamage(stack, damage);
-    }
-
-    public static float clamp(float val, float min, float max) {
-        return Math.max(min, Math.min(max, val));
     }
 
     @Override

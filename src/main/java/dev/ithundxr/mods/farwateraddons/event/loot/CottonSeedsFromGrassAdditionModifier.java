@@ -14,7 +14,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import javax.annotation.Nonnull;
 import java.util.List;
 
-public class CottonSeedsFromGrassAdditionModifier  extends LootModifier {
+public class CottonSeedsFromGrassAdditionModifier extends LootModifier {
     private final Item addition;
 
     protected CottonSeedsFromGrassAdditionModifier(LootItemCondition[] conditionsIn, Item addition) {
@@ -27,7 +27,7 @@ public class CottonSeedsFromGrassAdditionModifier  extends LootModifier {
     protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
         // generatedLoot is the loot that would be dropped, if we wouldn't add or replace
         // anything!
-        if(context.getRandom().nextFloat() > 0.5f) {
+        if (context.getRandom().nextFloat() > 0.5f) {
             generatedLoot.add(new ItemStack(addition, 1));
         }
         return generatedLoot;

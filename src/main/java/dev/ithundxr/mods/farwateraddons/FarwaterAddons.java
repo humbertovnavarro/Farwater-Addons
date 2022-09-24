@@ -58,22 +58,7 @@ public class FarwaterAddons {
     }
 
     private void setup(final FMLCommonSetupEvent event) {
-        event.enqueueWork(() -> {/*
-                    SpawnPlacements.register(ModEntityTypes.ITHUNDXRTOKENBOSS.get(),
-                    SpawnPlacements.Type.ON_GROUND,
-                    Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                    IThundxrTokenBoss::canSpawn);
-
-            SpawnPlacements.register(ModEntityTypes.NOVANIGHTIMETOKENBOSS.get(),
-                    SpawnPlacements.Type.ON_GROUND,
-                    Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                    NovaNightimeTokenBoss::canSpawn);
-
-            SpawnPlacements.register(ModEntityTypes.HYPERRACCOONTOKENBOSS.get(),
-                    SpawnPlacements.Type.ON_GROUND,
-                    Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                    HyperRaccoonTokenBoss::canSpawn);*/
-
+        event.enqueueWork(() -> {
             SpawnPlacements.register(ModEntityTypes.CAPYBARA.get(),
                     SpawnPlacements.Type.ON_GROUND,
                     Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,

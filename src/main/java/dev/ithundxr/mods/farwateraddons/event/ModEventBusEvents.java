@@ -29,12 +29,6 @@ public class ModEventBusEvents {
 
     @SubscribeEvent
     public static void entityAttributeEvent(EntityAttributeCreationEvent event) {
-  /*
-    event.put(ModEntityTypes.ITHUNDXRTOKENBOSS.get(), IThundxrTokenBoss.setAttributes());
-    event.put(ModEntityTypes.NOVANIGHTIMETOKENBOSS.get(), NovaNightimeTokenBoss.setAttributes());
-    event.put(ModEntityTypes.HYPERRACCOONTOKENBOSS.get(), HyperRaccoonTokenBoss.setAttributes());
-  */
-
         event.put(ModEntityTypes.CAPYBARA.get(), CapybaraEntity.setAttributes());
     }
 

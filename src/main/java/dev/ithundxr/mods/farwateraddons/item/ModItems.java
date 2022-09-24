@@ -64,22 +64,11 @@ public class ModItems {
 
     public static final RegistryObject<Item> RECALL_AMULET = ITEMS.register("recall_amulet", RecallAmulet::new);
 
-    public static final RegistryObject<Item> BLANK_MUSIC_DISC = ITEMS.register("blank_music_disc",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.FARWATERADDONS_TAB).stacksTo(16)));
-
     public static final RegistryObject<Item> DISC_FRAGMENT_LOST_SOUL = ITEMS.register("disc_fragment_lost_soul",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.FARWATERADDONS_TAB).stacksTo(8).rarity(Rarity.RARE)));
 
     public static final RegistryObject<Item> THE_LOST_SOUL_MUSIC_DISC = ITEMS.register("the_lost_soul_music_disc",
             () -> new RecordItem(4, ModSounds.THE_LOST_SOUL,
-                    new Item.Properties().tab(ModCreativeModeTab.FARWATERADDONS_TAB).stacksTo(1).rarity(Rarity.RARE)));
-
-    public static final RegistryObject<Item> DAVEY_JONES_PLAYS_HIS_ORAGAN_MUSIC_DISC = ITEMS.register("davey_jones_plays_his_organ_music_disc",
-            () -> new RecordItem(4, ModSounds.DAVEY_JONES_PLAYS_HIS_ORAGAN,
-                    new Item.Properties().tab(ModCreativeModeTab.FARWATERADDONS_TAB).stacksTo(1).rarity(Rarity.RARE)));
-
-    public static final RegistryObject<Item> PSTP_MUSIC_DISC = ITEMS.register("pstp_music_disc",
-            () -> new RecordItem(4, ModSounds.PSTP,
                     new Item.Properties().tab(ModCreativeModeTab.FARWATERADDONS_TAB).stacksTo(1).rarity(Rarity.RARE)));
 
 

@@ -189,6 +189,9 @@ repositories {
     maven {
         url 'https://maven.blamejared.com'
     }
+    maven {
+        url "https://cursemaven.com"
+    }
 }
 
 dependencies {
@@ -218,6 +221,9 @@ dependencies {
 
     //Jei for stuff
     runtimeOnly fg.deobf("mezz.jei:jei-${minecraft_version}:${jei_version}")
+
+    //fish mod for stuff
+    implementation fg.deobf("curse.maven:aquaculture-60028:3948611")
 
 }
 

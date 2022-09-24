@@ -18,16 +18,6 @@ public class ModEntityGeneration {
     public static ForgeConfigSpec.IntValue capybaraspawnrate;
 
     public static void onEntitySpawn(final BiomeLoadingEvent event) {
-/*        addEntityToAllOverworldBiomes(event, ModEntityTypes.ITHUNDXRTOKENBOSS.get(),
-                1, 1, 1);
-
-        addEntityToAllOverworldBiomes(event, ModEntityTypes.NOVANIGHTIMETOKENBOSS.get(),
-                1, 1, 1);
-
-        addEntityToAllOverworldBiomes(event, ModEntityTypes.HYPERRACCOONTOKENBOSS.get(),
-                1, 1, 1);
-*/
-
         addEntityToSpecificBiomes(event, ModEntityTypes.CAPYBARA.get(),
                 capybaraspawnrate.get(), 1, 4, JUNGLE);
     }

@@ -11,7 +11,7 @@ displayURL = "https://github.com/IThundxr/Farwater-Addons"
 authors = "IThundxr" #optional
 description = '''
 Custom mod for the Farwater Server to add a bunch of custom features to the server
-discord https://discord.gg/jXhn4zktzz
+discord https://discord.gg/farwater
 '''
 
 [[dependencies.farwateraddons]]

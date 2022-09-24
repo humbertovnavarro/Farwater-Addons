@@ -14,8 +14,6 @@ public class ModSounds {
 
     public static RegistryObject<SoundEvent> THE_LOST_SOUL = registerSoundEvent("the_lost_soul");
 
-    public static RegistryObject<SoundEvent> DAVEY_JONES_PLAYS_HIS_ORAGAN = registerSoundEvent("davey_jones_plays_his_organ");
-    public static RegistryObject<SoundEvent> PSTP = registerSoundEvent("pstp");
 
     public static RegistryObject<SoundEvent> CAPYBARA_AMBIENT = registerSoundEvent("capybara.ambient");
     public static RegistryObject<SoundEvent> CAPYBARA_DEATH = registerSoundEvent("capybara.death");

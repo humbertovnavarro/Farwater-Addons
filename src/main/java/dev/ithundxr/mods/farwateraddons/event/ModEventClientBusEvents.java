@@ -25,11 +25,6 @@ public class ModEventClientBusEvents {
 
         ModItemProperties.addCustomItemProperties();
 
-        /*EntityRenderers.register(ModEntityTypes.ITHUNDXRTOKENBOSS.get(), IThundxrTokenBossRenderer::new);
-        EntityRenderers.register(ModEntityTypes.NOVANIGHTIMETOKENBOSS.get(), NovaNightimeTokenBossRenderer::new);
-        EntityRenderers.register(ModEntityTypes.HYPERRACCOONTOKENBOSS.get(), HyperRaccoonTokenBossRenderer::new);*/
-
-
         EntityRenderers.register(ModEntityTypes.CAPYBARA.get(), CapybaraRenderer::new);
     }
 }

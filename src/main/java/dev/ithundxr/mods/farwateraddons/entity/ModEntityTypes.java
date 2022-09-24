@@ -14,25 +14,6 @@ public class ModEntityTypes {
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =
             DeferredRegister.create(ForgeRegistries.ENTITIES, FarwaterAddons.MOD_ID);
 
-/*    public static final RegistryObject<EntityType<IThundxrTokenBoss>> ITHUNDXRTOKENBOSS =
-            ENTITY_TYPES.register("ithundxrtokenboss",
-                    () -> EntityType.Builder.of(IThundxrTokenBoss::new, MobCategory.MONSTER)
-                            .sized(0.8f, 1.9f)
-                            .build(new ResourceLocation(FarwaterAddons.MOD_ID, "ithundxrtokenboss").toString()));
-
-    public static final RegistryObject<EntityType<NovaNightimeTokenBoss>> NOVANIGHTIMETOKENBOSS =
-            ENTITY_TYPES.register("novanightimetokenboss",
-                    () -> EntityType.Builder.of(NovaNightimeTokenBoss::new, MobCategory.MONSTER)
-                            .sized(0.8f, 1.9f)
-                            .build(new ResourceLocation(FarwaterAddons.MOD_ID, "novanightimetokenboss").toString()));
-
-    public static final RegistryObject<EntityType<HyperRaccoonTokenBoss>> HYPERRACCOONTOKENBOSS =
-            ENTITY_TYPES.register("hyperraccoontokenboss",
-                    () -> EntityType.Builder.of(HyperRaccoonTokenBoss::new, MobCategory.MONSTER)
-                            .sized(0.8f, 1.9f)
-                            .build(new ResourceLocation(FarwaterAddons.MOD_ID, "hyperraccoontokenboss").toString()));
-*/
-
     public static final RegistryObject<EntityType<CapybaraEntity>> CAPYBARA =
             ENTITY_TYPES.register("capybara",
                     () -> EntityType.Builder.of(CapybaraEntity::new, MobCategory.MONSTER)

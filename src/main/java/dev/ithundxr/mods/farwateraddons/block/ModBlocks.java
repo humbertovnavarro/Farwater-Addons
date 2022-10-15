@@ -2,6 +2,8 @@ package dev.ithundxr.mods.farwateraddons.block;
 
 import dev.ithundxr.mods.farwateraddons.FarwaterAddons;
 import dev.ithundxr.mods.farwateraddons.block.custom.CottonPlantBlock;
+import dev.ithundxr.mods.farwateraddons.block.custom.NetherStarBlock;
+import dev.ithundxr.mods.farwateraddons.block.custom.Respawner;
 import dev.ithundxr.mods.farwateraddons.item.ModCreativeModeTab;
 import dev.ithundxr.mods.farwateraddons.item.ModItems;
 import net.minecraft.network.chat.Component;
@@ -12,6 +14,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.GlassBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -33,6 +36,13 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> CLEAR_AMETHYST_GLASS = registerBlock("clear_amethyst_glass",
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion()), ModCreativeModeTab.FARWATERADDONS_TAB);
+
+    public static final RegistryObject<Block> NETHERSTARBLOCK = registerBlock("nether_star_block",
+            () -> new NetherStarBlock(BlockBehaviour.Properties.of(Material.STONE).strength(50.0F))
+            , ModCreativeModeTab.FARWATERADDONS_TAB);
+
+    public static final RegistryObject<Block> RECALL_STATUE = registerBlock("recall_statue",
+            Respawner::new, ModCreativeModeTab.FARWATERADDONS_TAB);
 
 
     private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {

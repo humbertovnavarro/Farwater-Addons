@@ -23,6 +23,8 @@ public class ModEventClientBusEvents {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.AMETHYST_GLASS.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CLEAR_AMETHYST_GLASS.get(), RenderType.cutout());
 
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.RECALL_STATUE.get(), RenderType.cutout());
+
         ModItemProperties.addCustomItemProperties();
 
         EntityRenderers.register(ModEntityTypes.CAPYBARA.get(), CapybaraRenderer::new);

@@ -24,9 +24,7 @@ public class ModFluids {
     public static final DeferredRegister<Fluid> FLUIDS
             = DeferredRegister.create(ForgeRegistries.FLUIDS, FarwaterAddons.MOD_ID);
 
-    public static void register(IEventBus eventBus) {
-        FLUIDS.register(eventBus);
-    }    public static final RegistryObject<FlowingFluid> MOLTEN_SUGAR
+    public static final RegistryObject<FlowingFluid> MOLTEN_SUGAR
             = FLUIDS.register("molten_sugar", () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_SUGAR_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> MOLTEN_SUGAR_FLOWING
@@ -34,14 +32,15 @@ public class ModFluids {
 
 
     public static final ForgeFlowingFluid.Properties MOLTEN_SUGAR_PROPERTIES = new ForgeFlowingFluid.Properties(
-            MOLTEN_SUGAR, MOLTEN_SUGAR_FLOWING, FluidAttributes.builder(MOLTEN_SUGAR_STILL_RL, MOLTEN_SUGAR_FLOWING_RL)
+            () -> MOLTEN_SUGAR.get(), () -> MOLTEN_SUGAR_FLOWING.get(), FluidAttributes.builder(MOLTEN_SUGAR_STILL_RL, MOLTEN_SUGAR_FLOWING_RL)
             .density(1400).viscosity(1500).color(0xc8fff7e0)).slopeFindDistance(6)
-            .block(ModFluids.MOLTEN_SUGAR_BLOCK).bucket(ModItems.MOLTEN_SUGAR_BUCKET);
+            .block(() -> ModFluids.MOLTEN_SUGAR_BLOCK.get()).bucket(() -> ModItems.MOLTEN_SUGAR_BUCKET.get());
 
     public static final RegistryObject<LiquidBlock> MOLTEN_SUGAR_BLOCK = ModBlocks.BLOCKS.register("molten_sugar",
-            () -> new LiquidBlock(ModFluids.MOLTEN_SUGAR, BlockBehaviour.Properties.of(Material.WATER)
+            () -> new LiquidBlock(() -> ModFluids.MOLTEN_SUGAR.get(), BlockBehaviour.Properties.of(Material.WATER)
                     .noCollission().strength(100f).noDrops()));
 
-
-
+    public static void register(IEventBus eventBus) {
+        FLUIDS.register(eventBus);
+    }
 }

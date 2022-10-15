@@ -456,7 +456,7 @@ IThundxr.
 Hello!
 Hello.
 Hell
-cUsTiMizEd FoR mOrE eNjOyAbIlItY!
+cUsToMizEd FoR mOrE eNjOyAbIlItY!
 c a p y b a r a
 CAPYBARA
 capybara

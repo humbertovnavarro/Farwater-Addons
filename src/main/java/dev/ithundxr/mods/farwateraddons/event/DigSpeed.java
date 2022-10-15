@@ -1,4 +1,4 @@
-package dev.ithundxr.mods.farwateraddons.mixin;
+package dev.ithundxr.mods.farwateraddons.event;
 
 import dev.ithundxr.mods.farwateraddons.config.Config;
 import dev.ithundxr.mods.farwateraddons.enchantment.ModEnchantments;
@@ -12,17 +12,13 @@ import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
-import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Inject;
+import net.minecraftforge.event.entity.player.PlayerEvent.BreakSpeed;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-@Mixin(Player.class)
-public class PlayerMixin {
-    private int em;
-
-    @Inject(at = @At("HEAD"), cancellable = true, method = "getDigSpeed(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/BlockPos;)F", remap = false)
-    private void getDigSpeed(BlockState blockState, BlockPos pos, CallbackInfoReturnable<Float> cir) {
+public class DigSpeed {
+/*    @SubscribeEvent
+    private void getDigSpeed(BreakSpeed event, BlockState blockState, BlockPos pos, CallbackInfoReturnable<Float> cir) {
         if (blockState != null) {
 
             Player thiz = (Player) (Object) this;
@@ -31,8 +27,8 @@ public class PlayerMixin {
             int efficiency = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BLOCK_EFFICIENCY, itemStack);
 
             if (efficiency >= 5) {
-                float speed = ((TieredItem) item).getTier().getSpeed();
-                if (Items.NETHERITE_PICKAXE.equals(item)) {
+                if (Items.NETHERITE_PICKAXE.equals(item) && item instanceof TieredItem tItem) {
+                    float speed = tItem.getTier().getSpeed();
 
                     int dm = EnchantmentHelper.getItemEnchantmentLevel(ModEnchantments.DEEPSLATE_MINER.get(), itemStack);
                     int cm = EnchantmentHelper.getItemEnchantmentLevel(ModEnchantments.COBBLESTONE_MINER.get(), itemStack);
@@ -48,5 +44,5 @@ public class PlayerMixin {
                 }
             }
         }
-    }
+    }*/
 }

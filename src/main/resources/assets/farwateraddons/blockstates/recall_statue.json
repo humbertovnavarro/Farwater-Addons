@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "facing=north,top=false": { "model": "farwateraddons:block/recall_statue", "y": 90 },
+    "facing=south,top=false": { "model": "farwateraddons:block/recall_statue", "y": 270 },
+    "facing=west,top=false":  { "model": "farwateraddons:block/recall_statue" },
+    "facing=east,top=false":  { "model": "farwateraddons:block/recall_statue", "y": 180 },
+    "top=true":  { "model": "farwateraddons:block/recall_statue_top" }
+  }
+}

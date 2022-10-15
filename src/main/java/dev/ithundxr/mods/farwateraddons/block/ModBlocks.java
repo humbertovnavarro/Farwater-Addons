@@ -38,11 +38,14 @@ public class ModBlocks {
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion()), ModCreativeModeTab.FARWATERADDONS_TAB);
 
     public static final RegistryObject<Block> NETHERSTARBLOCK = registerBlock("nether_star_block",
-            () -> new NetherStarBlock(BlockBehaviour.Properties.of(Material.STONE).strength(50.0F))
+            () -> new NetherStarBlock(BlockBehaviour.Properties.of(Material.STONE).strength(5.0F))
             , ModCreativeModeTab.FARWATERADDONS_TAB);
 
     public static final RegistryObject<Block> RECALL_STATUE = registerBlock("recall_statue",
             Respawner::new, ModCreativeModeTab.FARWATERADDONS_TAB);
+
+    //public static final RegistryObject<Block> SOLAR_PANEL = registerBlock("solar_panel",
+    //        () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion()), ModCreativeModeTab.FARWATERADDONS_TAB);
 
 
     private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {

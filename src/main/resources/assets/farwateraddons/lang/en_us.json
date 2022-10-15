@@ -40,6 +40,10 @@
   "message.spawn_help": "§c§lYou must hold§r %s §c§lto set your spawn point here",
   "message.spawn_set": "§2§lYour spawn point was set here",
 
+  "block.farwateraddons.nether_star_block": "Block Of Nether Stars",
+
+  "block.farwateraddons.solar_panel": "Solar Panel",
+
   "enchantment.farwateraddons.deepslate_miner": "Deepslate Miner",
   "enchantment.farwateraddons.deepslate_miner.desc": "Lets you instamine Deepslate",
   "enchantment.farwateraddons.endstone_miner": "Endstone Miner",

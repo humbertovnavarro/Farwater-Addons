@@ -26,7 +26,7 @@ public class NetherStarBlock extends Block {
     public void destroy(LevelAccessor level, @Nonnull BlockPos pos, @Nonnull BlockState state) {
         if (!level.isClientSide()) {
             if (explode && world != null) {
-                world.explode(null, pos.getX() + 0.5D, pos.getY(), pos.getZ() + 0.5D, 3, Explosion.BlockInteraction.DESTROY);
+                world.explode(null, pos.getX() + 0.5D, pos.getY(), pos.getZ() + 0.5D, 3, Explosion.BlockInteraction.NONE);
             }
             explode = false;
         }

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "farwateraddons:block/solar_panel"
+    }
+  }
+}

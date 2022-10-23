@@ -36,6 +36,7 @@
   "chat.farwateraddons.recall.dimension": "Can't teleport across dimensions",
   "chat.farwateraddons.recall.nobed": "Couldn't find bed",
 
+  "block.farwateraddons.recall_statue": "Recall Statue",
   "item.farwateraddons.recall_statue": "Recall Statue",
   "message.spawn_help": "§c§lYou must hold§r %s §c§lto set your spawn point here",
   "message.spawn_set": "§2§lYour spawn point was set here",
